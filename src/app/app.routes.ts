@@ -9,7 +9,7 @@ export const routes: Routes = [
     {path: 'landing', component: LandingPage },
     {path: 'home', component: HomePage },
     {path: 'rosters', component: RosterSelectorComponent, children:[
-        {path: 'roster/:id', component: RosterViewPage}
+        {path: ':rosterId', component: RosterViewPage}
     ] },
     {path: '**', redirectTo: 'home' }
 ];
