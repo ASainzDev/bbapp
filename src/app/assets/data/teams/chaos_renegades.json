@@ -1,0 +1,22 @@
+{
+  "equipo": "Chaos Renegades",
+  "equipos_famosos": ["Mongrel Horde", "Chaos All-Stars", "Howling-Hills Helions"],
+  "liga": "Competición del Caos",
+  "reglas_especiales": ["Elegidos de (elegir entre Khorne, Nurgle, Slaanesh, Tzeentch y Caos Absoluto)"],
+  "restricciones_plantilla": ["Puede tener hasta tres jugadores Grandullones elegidos entre las opciones indicadas."],
+  "jugadores": [
+    {"nombre": "Renegade Human", "cantidad": 16, "posicion": "Línea", "raza": "Human", "coste": 50000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": ["Animosidad (todos)"], "habilidades_primarias": ["G", "M", "T"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Renegade Goblin", "cantidad": 1, "posicion": "Línea", "raza": "Goblin", "coste": 40000, "mv": 6, "fu": 2, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Animosidad (todos)", "Escurridizo", "Esquivar", "Humanoide bala"], "habilidades_primarias": ["A", "M", "T"], "habilidades_secundarias": ["G", "P"]},
+    {"nombre": "Renegade Orc", "cantidad": 1, "posicion": "Línea", "raza": "Orc", "coste": 50000, "mv": 5, "fu": 3, "ag": "3+", "ps": "4+", "ar": "10+", "habilidades_y_rasgos": ["Animosidad (todos)"], "habilidades_primarias": ["G", "M", "T"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Renegade Skaven", "cantidad": 1, "posicion": "Línea", "raza": "Skaven", "coste": 50000, "mv": 7, "fu": 3, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Animosidad (todos)"], "habilidades_primarias": ["G", "M", "T"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Renegade Dark Elf", "cantidad": 1, "posicion": "Línea", "raza": "Elf", "coste": 65000, "mv": 6, "fu": 3, "ag": "2+", "ps": "3+", "ar": "9+", "habilidades_y_rasgos": ["Animosidad (todos)"], "habilidades_primarias": ["A", "G", "M", "T"], "habilidades_secundarias": ["F"]},
+    {"nombre": "Renegade Human Thrower", "cantidad": 1, "posicion": "Lanzador", "raza": "Human", "coste": 75000, "mv": 6, "fu": 3, "ag": "3+", "ps": "3+", "ar": "9+", "habilidades_y_rasgos": ["Animosidad (todos)", "Manos seguras", "Pasar"], "habilidades_primarias": ["G", "M", "P", "T"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Troll", "cantidad": 1, "posicion": "Grandullón", "raza": "Troll", "coste": 115000, "mv": 4, "fu": 5, "ag": "5+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Golpe mortífero", "Lanzar compañero", "Proyectil de vómito", "Realmente estúpido", "Regeneración", "Siempre hambriento", "Solitario (4+)"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "M", "P"]},
+    {"nombre": "Ogre", "cantidad": 1, "posicion": "Grandullón", "raza": "Ogre", "coste": 140000, "mv": 5, "fu": 5, "ag": "4+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Estúpido", "Lanzar compañero", "Solitario (4+)"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "M"]},
+    {"nombre": "Minotaur", "cantidad": 1, "posicion": "Grandullón", "raza": "Minotaur", "coste": 150000, "mv": 5, "fu": 5, "ag": "4+", "ps": "6+", "ar": "9+", "habilidades_y_rasgos": ["Cabeza dura", "Cuernos", "Furia", "Golpe mortífero", "Ira descontrolada", "Solitario (4+)"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "M"]},
+    {"nombre": "Rat Ogre", "cantidad": 1, "posicion": "Grandullón", "raza": "Skaven", "coste": 150000, "mv": 6, "fu": 5, "ag": "4+", "ps": "6+", "ar": "9+", "habilidades_y_rasgos": ["Cola prensil", "Ferocidad animal", "Furia", "Golpe mortífero", "Solitario (4+)"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "M"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 70000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 173, "pagina_txt": 173, "pagina_impresa": 165, "validado": false, "faqs_revisadas": false}
+}

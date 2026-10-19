@@ -1,0 +1,17 @@
+{
+  "equipo": "Orcs",
+  "equipos_famosos": ["The Gouged Eye", "Da Deff Skwad", "Green Destroyers"],
+  "liga": "Reyerta en las Yermas",
+  "reglas_especiales": ["Brutos brutales", "Capitán del equipo"],
+  "jugadores": [
+    {"nombre": "Orc Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Orc", "coste": 50000, "mv": 5, "fu": 3, "ag": "3+", "ps": "4+", "ar": "10+", "habilidades_y_rasgos": [], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A", "T"]},
+    {"nombre": "Goblin Lineman", "cantidad": 4, "posicion": "Línea", "raza": "Goblin", "coste": 40000, "mv": 6, "fu": 2, "ag": "3+", "ps": "3+", "ar": "8+", "habilidades_y_rasgos": ["Escurridizo", "Esquivar", "Humanoide bala"], "habilidades_primarias": ["A", "T"], "habilidades_secundarias": ["G", "F", "P"]},
+    {"nombre": "Orc Thrower", "cantidad": 2, "posicion": "Lanzador", "raza": "Orc", "coste": 75000, "mv": 6, "fu": 3, "ag": "3+", "ps": "3+", "ar": "9+", "habilidades_y_rasgos": ["Manos seguras", "Pasar"], "habilidades_primarias": ["G", "P"], "habilidades_secundarias": ["A", "F", "T"]},
+    {"nombre": "Orc Blitzer", "cantidad": 2, "posicion": "Blitzer", "raza": "Orc", "coste": 85000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "10+", "habilidades_y_rasgos": ["Abrirse paso", "Placar"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A", "T"]},
+    {"nombre": "Big Un Blocker", "cantidad": 2, "posicion": "Defensor", "raza": "Orc", "coste": 95000, "mv": 5, "fu": 4, "ag": "4+", "ps": "6+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Golpe mortífero", "Provocar", "Tembloroso"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A", "T"]},
+    {"nombre": "Troll", "cantidad": 1, "posicion": "Grandullón", "raza": "Troll", "coste": 115000, "mv": 4, "fu": 5, "ag": "5+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Golpe mortífero", "Lanzar compañero", "Proyectil de vómito", "Realmente estúpido", "Regeneración", "Siempre hambriento", "Solitario (4+)"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "P"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 60000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 189, "pagina_txt": 189, "pagina_impresa": 181, "validado": false, "faqs_revisadas": false}
+}

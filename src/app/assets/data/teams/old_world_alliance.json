@@ -1,0 +1,23 @@
+{
+  "equipo": "Old World Alliance",
+  "equipos_famosos": ["Middenheim Maulers", "Averland All-Stars", "Blucheim Berserkers"],
+  "liga": "Clásica del Viejo Mundo",
+  "reglas_especiales": [],
+  "restricciones_plantilla": ["Puede tener un único jugador Grandullón, elegido entre las opciones indicadas."],
+  "jugadores": [
+    {"nombre": "Human Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Human", "coste": 50000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": [], "habilidades_primarias": ["G"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Halfling Hopeful", "cantidad": 5, "posicion": "Línea", "raza": "Halfling", "coste": 30000, "mv": 5, "fu": 2, "ag": "3+", "ps": "4+", "ar": "7+", "habilidades_y_rasgos": ["Escurridizo", "Esquivar", "Humanoide bala"], "habilidades_primarias": ["A"], "habilidades_secundarias": ["F", "G"]},
+    {"nombre": "Human Catcher", "cantidad": 1, "posicion": "Receptor", "raza": "Human", "coste": 75000, "mv": 8, "fu": 3, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Atrapar", "Esquivar"], "habilidades_primarias": ["A", "G"], "habilidades_secundarias": ["F", "P"]},
+    {"nombre": "Dwarf Lineman", "cantidad": 3, "posicion": "Línea", "raza": "Dwarf", "coste": 70000, "mv": 4, "fu": 3, "ag": "4+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Placar", "Romper defensas"], "habilidades_primarias": ["G", "T"], "habilidades_secundarias": ["F"]},
+    {"nombre": "Human Thrower", "cantidad": 1, "posicion": "Lanzador", "raza": "Human", "coste": 75000, "mv": 6, "fu": 3, "ag": "3+", "ps": "3+", "ar": "9+", "habilidades_y_rasgos": ["Manos seguras", "Pasar"], "habilidades_primarias": ["G", "P"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Dwarf Runner", "cantidad": 1, "posicion": "Corredor", "raza": "Dwarf", "coste": 80000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": ["Cabeza dura", "Esprintar", "Manos seguras"], "habilidades_primarias": ["G", "P"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Human Blitzer", "cantidad": 1, "posicion": "Blitzer", "raza": "Human", "coste": 85000, "mv": 7, "fu": 3, "ag": "3+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": ["Placaje defensivo", "Placar"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A"]},
+    {"nombre": "Dwarf Blitzer", "cantidad": 1, "posicion": "Blitzer", "raza": "Dwarf", "coste": 100000, "mv": 5, "fu": 3, "ag": "4+", "ps": "4+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Placaje defensivo", "Placaje heroico", "Placar"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["P"]},
+    {"nombre": "Troll Slayer", "cantidad": 1, "posicion": "Especial", "raza": "Dwarf", "coste": 95000, "mv": 5, "fu": 3, "ag": "4+", "ps": "5+", "ar": "9+", "habilidades_y_rasgos": ["Agallas", "Cabeza dura", "Furia", "Odio (Troll)", "Placar"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A"]},
+    {"nombre": "Ogre", "cantidad": 1, "posicion": "Grandullón", "raza": "Ogre", "coste": 140000, "mv": 5, "fu": 5, "ag": "4+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Estúpido", "Golpe mortífero", "Lanzar compañero", "Solitario (3+)"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "M"]},
+    {"nombre": "Altern Forest Treeman", "cantidad": 1, "posicion": "Grandullón", "raza": "Treeman", "coste": 120000, "mv": 2, "fu": 6, "ag": "5+", "ps": "5+", "ar": "11+", "habilidades_y_rasgos": ["Brazofuerte", "Cabeza dura", "Echar raíces", "Golpe mortífero", "Lanzar compañero", "Mantenerse firme", "¡Tronco va!"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "P"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 70000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 188, "pagina_txt": 188, "pagina_impresa": 180, "validado": false, "faqs_revisadas": false}
+}

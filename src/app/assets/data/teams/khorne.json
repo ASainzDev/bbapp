@@ -1,0 +1,15 @@
+{
+  "equipo": "Khorne",
+  "equipos_famosos": ["Skull-Tribe Slaughterers", "Bloodsoaked Bruisers", "Khorne's Killers"],
+  "liga": "Competición del Caos",
+  "reglas_especiales": ["Brutos brutales", "Elegidos de Khorne"],
+  "jugadores": [
+    {"nombre": "Bloodborn Marauder", "cantidad": 16, "posicion": "Línea", "raza": "Human", "coste": 50000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Furia asesina"], "habilidades_primarias": ["G", "M"], "habilidades_secundarias": ["A", "F", "T"]},
+    {"nombre": "Khorngor", "cantidad": 2, "posicion": "Corredor", "raza": "Beastman", "coste": 70000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": ["Cabeza dura", "Cuernos", "En pie de un salto", "Imparable"], "habilidades_primarias": ["F", "G", "M"], "habilidades_secundarias": ["A", "P", "T"]},
+    {"nombre": "Bloodseeker", "cantidad": 4, "posicion": "Defensor", "raza": "Human", "coste": 105000, "mv": 5, "fu": 4, "ag": "4+", "ps": "6+", "ar": "10+", "habilidades_y_rasgos": ["Furia asesina"], "habilidades_primarias": ["F", "G", "M"], "habilidades_secundarias": ["A", "T"]},
+    {"nombre": "Bloodspawn", "cantidad": 1, "posicion": "Grandullón", "raza": "Spawn", "coste": 160000, "mv": 5, "fu": 5, "ag": "4+", "ps": "6+", "ar": "9+", "habilidades_y_rasgos": ["Furia", "Garras", "Golpe mortífero", "Ira descontrolada", "Solitario (4+)"], "habilidades_primarias": ["F", "M"], "habilidades_secundarias": ["A", "G"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 60000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 182, "pagina_txt": 182, "pagina_impresa": 174, "validado": false, "faqs_revisadas": false}
+}

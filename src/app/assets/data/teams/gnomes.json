@@ -1,0 +1,16 @@
+{
+  "equipo": "Gnomes",
+  "equipos_famosos": ["Glimdwarrow Groundhogs", "Mirror Moor Marauders", "Deep Forest Tricksters"],
+  "liga": "Copa Dedal Halfling o Liga de los Bosques",
+  "reglas_especiales": [],
+  "jugadores": [
+    {"nombre": "Gnome Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Gnome", "coste": 40000, "mv": 5, "fu": 2, "ag": "3+", "ps": "4+", "ar": "7+", "habilidades_y_rasgos": ["En pie de un salto", "Escurridizo", "Forcejear", "Humanoide bala"], "habilidades_primarias": ["A"], "habilidades_secundarias": ["F", "G", "T"]},
+    {"nombre": "Woodland Fox", "cantidad": 2, "posicion": "Corredor", "raza": "Animal", "coste": 50000, "mv": 7, "fu": 2, "ag": "2+", "ps": "-", "ar": "6+", "habilidades_y_rasgos": ["Echarse a un lado", "El balón es mío", "Escurridizo", "Esquivar"], "habilidades_primarias": [], "habilidades_secundarias": ["A"]},
+    {"nombre": "Gnome Illusionist", "cantidad": 2, "posicion": "Especial", "raza": "Gnome", "coste": 50000, "mv": 5, "fu": 2, "ag": "3+", "ps": "3+", "ar": "7+", "habilidades_y_rasgos": ["Embustero", "En pie de un salto", "Escurridizo", "Forcejear"], "habilidades_primarias": ["A", "P"], "habilidades_secundarias": ["G", "T"]},
+    {"nombre": "Gnome Beastmaster", "cantidad": 2, "posicion": "Defensor", "raza": "Gnome", "coste": 55000, "mv": 5, "fu": 2, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Defensa", "En pie de un salto", "Escurridizo", "Forcejear"], "habilidades_primarias": ["A"], "habilidades_secundarias": ["F", "G", "T"]},
+    {"nombre": "Altern Forest Treeman", "cantidad": 2, "posicion": "Grandullón", "raza": "Treeman", "coste": 120000, "mv": 2, "fu": 6, "ag": "5+", "ps": "5+", "ar": "11+", "habilidades_y_rasgos": ["Brazofuerte", "Cabeza dura", "Echar raíces", "Golpe mortífero", "Lanzar compañero", "Mantenerse firme", "¡Tronco va!"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "P"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 50000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 177, "pagina_txt": 177, "pagina_impresa": 169, "validado": false, "faqs_revisadas": false}
+}

@@ -1,0 +1,14 @@
+{
+  "equipo": "Ogres",
+  "equipos_famosos": ["Fire Mountain Gut-Busters", "Oldheim Ogres", "Tusk Peak Tyrants"],
+  "liga": "Reyerta en las Yermas o Superliga del Fin del Mundo",
+  "reglas_especiales": ["Brutos brutales", "Líneas prescindibles"],
+  "jugadores": [
+    {"nombre": "Gnoblar Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Gnoblar", "coste": 15000, "mv": 5, "fu": 1, "ag": "3+", "ps": "4+", "ar": "6+", "habilidades_y_rasgos": ["Canijo", "Echarse a un lado", "Escurridizo", "Esquivar", "Humanoide bala"], "habilidades_primarias": ["A", "T"], "habilidades_secundarias": ["G"]},
+    {"nombre": "Ogre Blocker", "cantidad": 5, "posicion": "Defensor, Grandullón", "raza": "Ogre", "coste": 140000, "mv": 5, "fu": 5, "ag": "4+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Estúpido", "Golpe mortífero", "Lanzar compañero"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "P", "T"]},
+    {"nombre": "Ogre Runt Punter", "cantidad": 1, "posicion": "Grandullón, Lanzador", "raza": "Ogre", "coste": 145000, "mv": 5, "fu": 5, "ag": "4+", "ps": "4+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Chutar compañero", "Estúpido", "Golpe mortífero"], "habilidades_primarias": ["F", "P"], "habilidades_secundarias": ["A", "G", "T"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 70000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 187, "pagina_txt": 187, "pagina_impresa": 179, "validado": false, "faqs_revisadas": false}
+}

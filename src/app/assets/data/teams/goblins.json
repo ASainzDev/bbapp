@@ -1,0 +1,19 @@
+{
+  "equipo": "Goblins",
+  "equipos_famosos": ["Scarcrag Snivellers", "Lowdown Rats", "The Greenboyz"],
+  "liga": "Reyerta en las Yermas o Reto del Inframundo",
+  "reglas_especiales": ["Sobornos y corrupción"],
+  "jugadores": [
+    {"nombre": "Goblin Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Goblin", "coste": 40000, "mv": 6, "fu": 2, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Escurridizo", "Esquivar", "Humanoide bala"], "habilidades_primarias": ["A", "T"], "habilidades_secundarias": ["G", "F", "P"]},
+    {"nombre": "Loony", "cantidad": 1, "posicion": "Especial", "raza": "Goblin", "coste": 40000, "mv": 6, "fu": 2, "ag": "3+", "ps": "-", "ar": "8+", "habilidades_y_rasgos": ["Arma secreta", "Escurridizo", "El balón ni verlo", "Motosierra"], "habilidades_primarias": ["T"], "habilidades_secundarias": ["A", "F", "G"]},
+    {"nombre": "Bomma", "cantidad": 1, "posicion": "Especial", "raza": "Goblin", "coste": 45000, "mv": 6, "fu": 2, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Arma secreta", "Bombardero", "Escurridizo", "Esquivar"], "habilidades_primarias": ["P", "T"], "habilidades_secundarias": ["A", "F", "G"]},
+    {"nombre": "Ooligan", "cantidad": 1, "posicion": "Especial", "raza": "Goblin", "coste": 60000, "mv": 6, "fu": 2, "ag": "3+", "ps": "5+", "ar": "8+", "habilidades_y_rasgos": ["Escurridizo", "Esquivar", "Humanoide bala", "Jugar sucio", "Presencia perturbadora", "Provocar"], "habilidades_primarias": ["A", "T"], "habilidades_secundarias": ["F", "G"]},
+    {"nombre": "Doom Diver", "cantidad": 1, "posicion": "Especial", "raza": "Goblin", "coste": 65000, "mv": 6, "fu": 2, "ag": "3+", "ps": "6+", "ar": "8+", "habilidades_y_rasgos": ["Escurridizo", "Esquivar", "Humanoide bala", "Planear"], "habilidades_primarias": ["A"], "habilidades_secundarias": ["F", "G", "T"]},
+    {"nombre": "Fanatic", "cantidad": 1, "posicion": "Especial", "raza": "Goblin", "coste": 70000, "mv": 3, "fu": 7, "ag": "3+", "ps": "-", "ar": "8+", "habilidades_y_rasgos": ["Arma secreta", "Bola con cadena", "El balón ni verlo", "Escurridizo"], "habilidades_primarias": ["F", "T"], "habilidades_secundarias": ["A", "G"]},
+    {"nombre": "Pogoer", "cantidad": 1, "posicion": "Especial", "raza": "Goblin", "coste": 75000, "mv": 7, "fu": 2, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Escurridizo", "Esquivar", "Pogo saltarín"], "habilidades_primarias": ["A"], "habilidades_secundarias": ["F", "G", "T"]},
+    {"nombre": "Trained Troll", "cantidad": 2, "posicion": "Grandullón", "raza": "Troll", "coste": 115000, "mv": 4, "fu": 5, "ag": "5+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Golpe mortífero", "Lanzar compañero", "Proyectil de vómito", "Realmente estúpido", "Regeneración", "Siempre hambriento"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "P"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 60000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 178, "pagina_txt": 178, "pagina_impresa": 170, "validado": false, "faqs_revisadas": false}
+}

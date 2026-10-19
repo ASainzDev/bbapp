@@ -1,0 +1,16 @@
+{
+  "equipo": "Necromantic Horror",
+  "equipos_famosos": ["Wolfenburg Crypt-Stealers", "Bruendar Grimjacks", "Pumpkin-Patch Petrifiers"],
+  "liga": "Selectiva de Sylvania",
+  "reglas_especiales": ["Señores de los No Muertos"],
+  "jugadores": [
+    {"nombre": "Zombie Lineman", "cantidad": 16, "posicion": "Línea", "raza": "No Muerto", "subtipo": "Zombie", "coste": 40000, "mv": 4, "fu": 3, "ag": "4+", "ps": "6+", "ar": "9+", "habilidades_y_rasgos": ["Piquete de ojos", "Regeneración", "Tembloroso"], "habilidades_primarias": ["G", "T"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Ghoul Runner", "cantidad": 2, "posicion": "Corredor", "raza": "No Muerto", "subtipo": "Ghoul", "coste": 75000, "mv": 7, "fu": 3, "ag": "3+", "ps": "3+", "ar": "8+", "habilidades_y_rasgos": ["Esquivar", "Regeneración"], "habilidades_primarias": ["A", "G"], "habilidades_secundarias": ["F", "P", "T"]},
+    {"nombre": "Wraith", "cantidad": 2, "posicion": "Defensor", "raza": "No Muerto", "subtipo": "Wraith", "coste": 85000, "mv": 6, "fu": 3, "ag": "3+", "ps": "-", "ar": "9+", "habilidades_y_rasgos": ["Apariencia asquerosa", "Echarse a un lado", "El balón ni verlo", "Placar", "Regeneración"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A", "T"]},
+    {"nombre": "Flesh Golem", "cantidad": 2, "posicion": "Defensor", "raza": "No Muerto", "subtipo": "Constructo", "coste": 110000, "mv": 4, "fu": 4, "ag": "4+", "ps": "6+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Mantenerse firme", "Regeneración", "Tembloroso"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A", "T"]},
+    {"nombre": "Werewolf", "cantidad": 2, "posicion": "Blitzer", "raza": "No Muerto", "subtipo": "Werewolf", "coste": 120000, "mv": 8, "fu": 3, "ag": "3+", "ps": "3+", "ar": "9+", "habilidades_y_rasgos": ["Furia", "Garras", "Regeneración"], "habilidades_primarias": ["A", "G"], "habilidades_secundarias": ["F", "P", "T"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 70000},
+  "apotecario": false,
+  "metadata": {"pagina_pdf": 184, "pagina_txt": 184, "pagina_impresa": 176, "validado": false, "faqs_revisadas": false}
+}

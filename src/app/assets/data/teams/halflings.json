@@ -1,0 +1,15 @@
+{
+  "equipo": "Halflings",
+  "equipos_famosos": ["Greenfield Grasshuggers", "Bluebay Crammers", "Moot Mighties"],
+  "liga": "Copa Dedal Halfling o Liga de los Bosques",
+  "reglas_especiales": [],
+  "jugadores": [
+    {"nombre": "Halfling Hopeful", "cantidad": 16, "posicion": "Línea", "raza": "Halfling", "coste": 30000, "mv": 5, "fu": 2, "ag": "3+", "ps": "4+", "ar": "7+", "habilidades_y_rasgos": ["Escurridizo", "Esquivar", "Humanoide bala"], "habilidades_primarias": ["A"], "habilidades_secundarias": ["F", "G", "T"]},
+    {"nombre": "Halfling Hefty", "cantidad": 2, "posicion": "Defensor", "raza": "Halfling", "coste": 50000, "mv": 5, "fu": 2, "ag": "3+", "ps": "3+", "ar": "8+", "habilidades_y_rasgos": ["Escurridizo", "Esquivar", "Zafarse"], "habilidades_primarias": ["A", "P"], "habilidades_secundarias": ["F", "G", "T"]},
+    {"nombre": "Halfling Catcher", "cantidad": 2, "posicion": "Receptor", "raza": "Halfling", "coste": 55000, "mv": 5, "fu": 2, "ag": "3+", "ps": "4+", "ar": "7+", "habilidades_y_rasgos": ["Atrapar", "Escurridizo", "Esprintar", "Esquivar", "Humanoide bala"], "habilidades_primarias": ["A"], "habilidades_secundarias": ["F", "G", "T"]},
+    {"nombre": "Altern Forest Treeman", "cantidad": 2, "posicion": "Grandullón", "raza": "Treeman", "coste": 120000, "mv": 2, "fu": 6, "ag": "5+", "ps": "5+", "ar": "11+", "habilidades_y_rasgos": ["Brazofuerte", "Cabeza dura", "Echar raíces", "Golpe mortífero", "Lanzar compañero", "Mantenerse firme", "¡Tronco va!"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "P"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 60000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 179, "pagina_txt": 179, "pagina_impresa": 171, "validado": false, "faqs_revisadas": false}
+}

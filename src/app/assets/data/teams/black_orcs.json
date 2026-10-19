@@ -1,0 +1,84 @@
+{
+  "equipo": "Black Orcs",
+  "equipos_famosos": [
+    "Thunder Valley Greenskins",
+    "Orcland Raiders",
+    "Iron-Rok Bonebreakers"
+  ],
+  "liga": "Reyerta en las Yermas",
+  "reglas_especiales": [
+    "Brutos brutales",
+    "Sobornos y corrupción"
+  ],
+  "jugadores": [
+    {
+      "nombre": "Goblin Bruiser",
+      "cantidad": 16,
+      "posicion": "Línea",
+      "raza": "Goblin",
+      "coste": 45000,
+      "mv": 6,
+      "fu": 2,
+      "ag": "3+",
+      "ps": "4+",
+      "ar": "8+",
+      "habilidades_y_rasgos": [
+        "Cabeza dura",
+        "Escurridizo",
+        "Esquivar",
+        "Humanoide bala"
+      ],
+      "habilidades_primarias": ["A", "T"],
+      "habilidades_secundarias": ["F", "G", "P"]
+    },
+    {
+      "nombre": "Black Orc",
+      "cantidad": 6,
+      "posicion": "Defensor",
+      "raza": "Orc",
+      "coste": 90000,
+      "mv": 4,
+      "fu": 4,
+      "ag": "4+",
+      "ps": "5+",
+      "ar": "10+",
+      "habilidades_y_rasgos": ["Apartar", "Luchador"],
+      "habilidades_primarias": ["F", "G"],
+      "habilidades_secundarias": ["A", "T"]
+    },
+    {
+      "nombre": "Trained Troll",
+      "cantidad": 1,
+      "posicion": "Grandullón",
+      "raza": "Troll",
+      "coste": 115000,
+      "mv": 4,
+      "fu": 5,
+      "ag": "5+",
+      "ps": "5+",
+      "ar": "10+",
+      "habilidades_y_rasgos": [
+        "Golpe mortífero",
+        "Lanzar compañero",
+        "Proyectil de vómito",
+        "Realmente estúpido",
+        "Regeneración",
+        "Siempre hambriento"
+      ],
+      "habilidades_primarias": ["F"],
+      "habilidades_secundarias": ["A", "G", "P"]
+    }
+  ],
+  "segundas_oportunidades": {
+    "cantidad": 8,
+    "coste_cada_una": 60000
+  },
+  "apotecario": true,
+  "metadata": {
+    "pagina_pdf": 169,
+    "pagina_txt": 169,
+    "pagina_impresa": 161,
+    "validado": false,
+    "faqs_revisadas": false
+  }
+}

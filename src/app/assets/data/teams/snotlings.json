@@ -1,0 +1,17 @@
+{
+  "equipo": "Snotlings",
+  "equipos_famosos": ["The 'Mighty' Crud-Creek Nosepickers", "The 'Devastating' Doomspire Death-Dealers", "The 'Fabulous' Pheifholm Fungus Farmers"],
+  "liga": "Reto del Inframundo",
+  "reglas_especiales": ["Colar jugadores", "Líneas prescindibles", "Sobornos y corrupción"],
+  "jugadores": [
+    {"nombre": "Snotling Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Snotling", "coste": 15000, "mv": 5, "fu": 1, "ag": "3+", "ps": "4+", "ar": "6+", "habilidades_y_rasgos": ["Canijo", "Echarse a un lado", "Escurridizo", "Esquivar", "Humanoide bala", "Insignificante"], "habilidades_primarias": ["A", "T"], "habilidades_secundarias": ["G"]},
+    {"nombre": "Fun-hoppa", "cantidad": 2, "posicion": "Especial", "raza": "Snotling", "coste": 20000, "mv": 6, "fu": 1, "ag": "3+", "ps": "4+", "ar": "6+", "habilidades_y_rasgos": ["Echarse a un lado", "Escurridizo", "Esquivar", "Humanoide bala", "Pogo saltarín"], "habilidades_primarias": ["A", "T"], "habilidades_secundarias": ["G"]},
+    {"nombre": "Stilty Runna", "cantidad": 2, "posicion": "Corredor", "raza": "Snotling", "coste": 20000, "mv": 6, "fu": 1, "ag": "3+", "ps": "4+", "ar": "6+", "habilidades_y_rasgos": ["Echarse a un lado", "Escurridizo", "Esprintar", "Esquivar", "Humanoide bala"], "habilidades_primarias": ["A", "T"], "habilidades_secundarias": ["G"]},
+    {"nombre": "Fungus Flinga", "cantidad": 2, "posicion": "Especial", "raza": "Snotling", "coste": 30000, "mv": 5, "fu": 1, "ag": "3+", "ps": "4+", "ar": "6+", "habilidades_y_rasgos": ["Arma secreta", "Bombardero", "Canijo", "Echarse a un lado", "Escurridizo", "Esquivar", "Humanoide bala"], "habilidades_primarias": ["A", "P", "T"], "habilidades_secundarias": ["G"]},
+    {"nombre": "Pump Wagon", "cantidad": 2, "posicion": "Especial, Grandullón", "raza": "Snotling", "coste": 100000, "mv": 5, "fu": 5, "ag": "5+", "ps": "6+", "ar": "9+", "habilidades_y_rasgos": ["Golpe mortífero", "Imparable", "Jugar sucio", "Mantenerse firme", "Realmente estúpido"], "habilidades_primarias": ["F", "T"], "habilidades_secundarias": ["A", "G"]},
+    {"nombre": "Trained Troll", "cantidad": 2, "posicion": "Grandullón", "raza": "Troll", "coste": 115000, "mv": 4, "fu": 5, "ag": "5+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Golpe mortífero", "Lanzar compañero", "Proyectil de vómito", "Realmente estúpido", "Regeneración", "Siempre hambriento"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "P"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 70000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 192, "pagina_txt": 192, "pagina_impresa": 184, "validado": false, "faqs_revisadas": false}
+}

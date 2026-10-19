@@ -1,0 +1,16 @@
+{
+  "equipo": "Imperial Nobility",
+  "equipos_famosos": ["Bögenhafen Barons", "Ostermark Dukes", "Averland Earls"],
+  "liga": "Clásica del Viejo Mundo",
+  "reglas_especiales": [],
+  "jugadores": [
+    {"nombre": "Imperial Retainer", "cantidad": 16, "posicion": "Línea", "raza": "Human", "coste": 45000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Zafarse"], "habilidades_primarias": ["G"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Imperial Thrower", "cantidad": 2, "posicion": "Lanzador", "raza": "Human", "coste": 75000, "mv": 6, "fu": 3, "ag": "3+", "ps": "2+", "ar": "9+", "habilidades_y_rasgos": ["Pasar", "Pasar y seguir", "Profesional"], "habilidades_primarias": ["G", "P"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Bodyguard", "cantidad": 4, "posicion": "Defensor", "raza": "Human", "coste": 85000, "mv": 5, "fu": 3, "ag": "3+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": ["Forcejear", "Mantenerse firme"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A"]},
+    {"nombre": "Noble Blitzer", "cantidad": 2, "posicion": "Blitzer", "raza": "Human", "coste": 90000, "mv": 7, "fu": 3, "ag": "3+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": ["Atrapar", "Placar", "Profesional"], "habilidades_primarias": ["A", "G"], "habilidades_secundarias": ["F", "P"]},
+    {"nombre": "Ogre", "cantidad": 1, "posicion": "Grandullón", "raza": "Ogre", "coste": 140000, "mv": 5, "fu": 5, "ag": "4+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Estúpido", "Golpe mortífero", "Lanzar compañero", "Solitario (3+)"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "M"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 60000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 181, "pagina_txt": 181, "pagina_impresa": 173, "validado": false, "faqs_revisadas": false}
+}

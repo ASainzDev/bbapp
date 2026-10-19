@@ -1,0 +1,15 @@
+{
+  "equipo": "Lizardmen",
+  "equipos_famosos": ["Gwaka'moli Crater Gators", "Sotek Vipers", "Lustria Croakers"],
+  "liga": "Superliga Lustriana",
+  "reglas_especiales": [],
+  "jugadores": [
+    {"nombre": "Skink Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Lizardman", "coste": 60000, "mv": 8, "fu": 2, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Escurridizo", "Esquivar"], "habilidades_primarias": ["A"], "habilidades_secundarias": ["F", "G", "P", "T"]},
+    {"nombre": "Chameleon Skink", "cantidad": 2, "posicion": "Lanzador", "raza": "Lizardman", "coste": 70000, "mv": 7, "fu": 2, "ag": "3+", "ps": "3+", "ar": "8+", "habilidades_y_rasgos": ["Atento al balón", "Escurridizo", "Esquivar", "Perseguir"], "habilidades_primarias": ["A", "P"], "habilidades_secundarias": ["F", "G", "T"]},
+    {"nombre": "Saurus Blocker", "cantidad": 6, "posicion": "Defensor", "raza": "Lizardman", "coste": 90000, "mv": 6, "fu": 4, "ag": "5+", "ps": "6+", "ar": "10+", "habilidades_y_rasgos": ["Imparable", "Tembloroso"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A"]},
+    {"nombre": "Kroxigor", "cantidad": 1, "posicion": "Grandullón", "raza": "Lizardman", "coste": 140000, "mv": 6, "fu": 5, "ag": "5+", "ps": "6+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Cola prensil", "Estúpido", "Golpe mortífero", "Solitario (4+)"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 70000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 183, "pagina_txt": 183, "pagina_impresa": 175, "validado": false, "faqs_revisadas": false}
+}

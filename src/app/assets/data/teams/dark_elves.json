@@ -1,0 +1,16 @@
+{
+  "equipo": "Dark Elves",
+  "equipos_famosos": ["Naggaroth Nightwings", "Darkside Cowboys", "Dark Ark Serpents"],
+  "liga": "Liga de los Reinos Elves",
+  "reglas_especiales": [],
+  "jugadores": [
+    {"nombre": "Dark Elf Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Elf", "coste": 65000, "mv": 6, "fu": 3, "ag": "2+", "ps": "3+", "ar": "9+", "habilidades_y_rasgos": [], "habilidades_primarias": ["A", "G"], "habilidades_secundarias": ["F", "T"]},
+    {"nombre": "Dark Elf Runner", "cantidad": 2, "posicion": "Corredor", "raza": "Elf", "coste": 80000, "mv": 7, "fu": 3, "ag": "2+", "ps": "3+", "ar": "8+", "habilidades_y_rasgos": ["Pase precipitado", "Patada de despeje"], "habilidades_primarias": ["A", "G", "P"], "habilidades_secundarias": ["F", "T"]},
+    {"nombre": "Dark Elf Assassin", "cantidad": 2, "posicion": "Especial", "raza": "Elf", "coste": 90000, "mv": 7, "fu": 3, "ag": "2+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Apuñalar", "Atacar y huir", "Perseguir"], "habilidades_primarias": ["A", "T"], "habilidades_secundarias": ["F", "G"]},
+    {"nombre": "Dark Elf Blitzer", "cantidad": 2, "posicion": "Blitzer", "raza": "Elf", "coste": 105000, "mv": 7, "fu": 3, "ag": "2+", "ps": "3+", "ar": "9+", "habilidades_y_rasgos": ["Placar"], "habilidades_primarias": ["A", "G"], "habilidades_secundarias": ["F", "P", "T"]},
+    {"nombre": "Witch Elf", "cantidad": 2, "posicion": "Especial", "raza": "Elf", "coste": 110000, "mv": 7, "fu": 3, "ag": "2+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["En pie de un salto", "Esquivar", "Furia"], "habilidades_primarias": ["A", "G"], "habilidades_secundarias": ["F", "T"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 50000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 174, "pagina_txt": 174, "pagina_impresa": 166, "validado": false, "faqs_revisadas": false}
+}

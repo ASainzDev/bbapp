@@ -1,0 +1,93 @@
+{
+  "equipo": "Amazons",
+  "equipos_famosos": [
+    "Kara Temple Harpies",
+    "Patraxi Pythons",
+    "Skywatch Sentinels"
+  ],
+  "liga": "Superliga Lustriana",
+  "reglas_especiales": [],
+  "jugadores": [
+    {
+      "nombre": "Eagle Warrior",
+      "cantidad": 16,
+      "posicion": "Línea",
+      "raza": "Human",
+      "coste": 50000,
+      "mv": 6,
+      "fu": 3,
+      "ag": "3+",
+      "ps": "4+",
+      "ar": "8+",
+      "habilidades_y_rasgos": ["Esquivar"],
+      "habilidades_primarias": ["G"],
+      "habilidades_secundarias": ["A", "F"]
+    },
+    {
+      "nombre": "Python Warrior",
+      "cantidad": 2,
+      "posicion": "Lanzador",
+      "raza": "Human",
+      "coste": 80000,
+      "mv": 6,
+      "fu": 3,
+      "ag": "3+",
+      "ps": "3+",
+      "ar": "8+",
+      "habilidades_y_rasgos": [
+        "Atento al balón",
+        "Esquivar",
+        "Pasar",
+        "Pase seguro"
+      ],
+      "habilidades_primarias": ["G", "P"],
+      "habilidades_secundarias": ["A", "F"]
+    },
+    {
+      "nombre": "Piranha Warrior",
+      "cantidad": 2,
+      "posicion": "Blitzer",
+      "raza": "Human",
+      "coste": 90000,
+      "mv": 7,
+      "fu": 3,
+      "ag": "3+",
+      "ps": "4+",
+      "ar": "8+",
+      "habilidades_y_rasgos": [
+        "Atacar y huir",
+        "En pie de un salto",
+        "Esquivar"
+      ],
+      "habilidades_primarias": ["A", "G"],
+      "habilidades_secundarias": ["F"]
+    },
+    {
+      "nombre": "Jaguar Warrior",
+      "cantidad": 2,
+      "posicion": "Defensor",
+      "raza": "Human",
+      "coste": 110000,
+      "mv": 6,
+      "fu": 4,
+      "ag": "3+",
+      "ps": "4+",
+      "ar": "9+",
+      "habilidades_y_rasgos": ["Esquivar", "Romper defensas"],
+      "habilidades_primarias": ["G", "F"],
+      "habilidades_secundarias": ["A"]
+    }
+  ],
+  "segundas_oportunidades": {
+    "cantidad": 8,
+    "coste_cada_una": 60000
+  },
+  "apotecario": true,
+  "metadata": {
+    "pagina_pdf": 168,
+    "pagina_txt": 168,
+    "pagina_impresa": 160,
+    "validado": true,
+    "faqs_revisadas": false
+  }
+}

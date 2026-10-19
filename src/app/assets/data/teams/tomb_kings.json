@@ -1,0 +1,15 @@
+{
+  "equipo": "Tomb Kings",
+  "equipos_famosos": ["Nehekhara Nightmares", "Mahrak Monoliths", "Ka-Sabar Scorpions"],
+  "liga": "Selectiva de Sylvania",
+  "reglas_especiales": ["Señores de los No Muertos"],
+  "jugadores": [
+    {"nombre": "Skeleton Lineman", "cantidad": 16, "posicion": "Línea", "raza": "No Muerto", "subtipo": "Skeleton", "coste": 40000, "mv": 5, "fu": 3, "ag": "4+", "ps": "6+", "ar": "8+", "habilidades_y_rasgos": ["Cabeza dura", "Regeneración"], "habilidades_primarias": ["G"], "habilidades_secundarias": ["A", "F", "T"]},
+    {"nombre": "Tomb Kings Thrower", "cantidad": 2, "posicion": "Lanzador", "raza": "No Muerto", "subtipo": "Skeleton", "coste": 65000, "mv": 6, "fu": 3, "ag": "4+", "ps": "3+", "ar": "9+", "habilidades_y_rasgos": ["Cabeza dura", "Manos seguras", "Pasar", "Regeneración"], "habilidades_primarias": ["G", "P"], "habilidades_secundarias": ["A", "F", "T"]},
+    {"nombre": "Tomb Kings Blitzer", "cantidad": 2, "posicion": "Blitzer", "raza": "No Muerto", "subtipo": "Skeleton", "coste": 85000, "mv": 6, "fu": 3, "ag": "4+", "ps": "5+", "ar": "9+", "habilidades_y_rasgos": ["Cabeza dura", "Placar", "Regeneración"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A", "T"]},
+    {"nombre": "Tomb Guardian", "cantidad": 4, "posicion": "Defensor, Grandullón", "raza": "No Muerto", "subtipo": "Human", "coste": 115000, "mv": 4, "fu": 5, "ag": "5+", "ps": "6+", "ar": "10+", "habilidades_y_rasgos": ["Descomposición", "Luchador", "Regeneración"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 60000},
+  "apotecario": false,
+  "metadata": {"pagina_pdf": 193, "pagina_txt": 193, "pagina_impresa": 185, "validado": false, "faqs_revisadas": false}
+}

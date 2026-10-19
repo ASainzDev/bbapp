@@ -1,0 +1,17 @@
+{
+  "equipo": "Chaos Dwarfs",
+  "equipos_famosos": ["Zharr-Naggrund Ziggurats", "Uzkulak Undertakers", "Ash Ridge Infernos"],
+  "liga": "Competición del Caos o Reyerta en las Yermas",
+  "reglas_especiales": ["Elegidos de Hashut"],
+  "jugadores": [
+    {"nombre": "Hobgoblin Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Goblin", "coste": 40000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": [], "habilidades_primarias": ["T"], "habilidades_secundarias": ["A", "F", "G"]},
+    {"nombre": "Sneaky Stabba", "cantidad": 2, "posicion": "Especial", "raza": "Goblin", "coste": 60000, "mv": 6, "fu": 3, "ag": "3+", "ps": "5+", "ar": "8+", "habilidades_y_rasgos": ["Apuñalar", "Perseguir"], "habilidades_primarias": ["G", "T"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Chaos Dwarf Blocker", "cantidad": 4, "posicion": "Defensor", "raza": "Dwarf", "coste": 70000, "mv": 4, "fu": 3, "ag": "4+", "ps": "6+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Piel férrea", "Placar"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A", "M", "T"]},
+    {"nombre": "Flamesmith", "cantidad": 2, "posicion": "Especial", "raza": "Dwarf", "coste": 80000, "mv": 5, "fu": 3, "ag": "4+", "ps": "6+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Exhalar fuego", "Luchador", "Presencia perturbadora"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A", "M", "T"]},
+    {"nombre": "Bull Centaur", "cantidad": 2, "posicion": "Blitzer", "raza": "Dwarf", "coste": 130000, "mv": 6, "fu": 4, "ag": "4+", "ps": "6+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Esprintar", "Pies firmes", "Tembloroso"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A", "M", "T"]},
+    {"nombre": "Minotaur", "cantidad": 1, "posicion": "Grandullón", "raza": "Minotaur", "coste": 150000, "mv": 5, "fu": 5, "ag": "4+", "ps": "6+", "ar": "9+", "habilidades_y_rasgos": ["Cabeza dura", "Cuernos", "Furia", "Golpe mortífero", "Ira descontrolada", "Solitario (4+)"], "habilidades_primarias": ["F", "M"], "habilidades_secundarias": ["A", "G"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 70000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 172, "pagina_txt": 172, "pagina_impresa": 164, "validado": false, "faqs_revisadas": false}
+}

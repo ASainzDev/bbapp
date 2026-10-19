@@ -1,0 +1,15 @@
+{
+  "equipo": "Bretonnians",
+  "equipos_famosos": ["Brionne Barons", "Couronne Lions", "Carcassonne Lancers"],
+  "liga": "Clásica del Viejo Mundo",
+  "reglas_especiales": [],
+  "jugadores": [
+    {"nombre": "Bretonnian Squire", "cantidad": 16, "posicion": "Línea", "raza": "Human", "coste": 50000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Forcejear"], "habilidades_primarias": ["G"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Bretonnian Knight Catcher", "cantidad": 2, "posicion": "Receptor", "raza": "Human", "coste": 85000, "mv": 7, "fu": 3, "ag": "3+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": ["Agallas", "Atrapar", "Nervios de acero"], "habilidades_primarias": ["A", "G"], "habilidades_secundarias": ["F"]},
+    {"nombre": "Bretonnian Knight Thrower", "cantidad": 2, "posicion": "Lanzador", "raza": "Human", "coste": 80000, "mv": 6, "fu": 3, "ag": "3+", "ps": "3+", "ar": "9+", "habilidades_y_rasgos": ["Agallas", "Nervios de acero", "Pasar"], "habilidades_primarias": ["G", "P"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Grail Knight", "cantidad": 2, "posicion": "Blitzer", "raza": "Human", "coste": 95000, "mv": 7, "fu": 3, "ag": "3+", "ps": "4+", "ar": "10+", "habilidades_y_rasgos": ["Agallas", "Equilibrio firme", "Placar"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 60000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 170, "pagina_txt": 170, "pagina_impresa": 162, "validado": false, "faqs_revisadas": false}
+}

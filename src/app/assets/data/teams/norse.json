@@ -1,0 +1,17 @@
+{
+  "equipo": "Norse",
+  "equipos_famosos": ["Norsca Rampagers", "Skjarlsberg Icicles", "New Fjord Jotnar"],
+  "liga": "Clásica del Viejo Mundo o Competición del Caos",
+  "reglas_especiales": ["Si elige Competición del Caos, el equipo gana Elegidos de Khorne"],
+  "jugadores": [
+    {"nombre": "Norse Raider", "cantidad": 16, "posicion": "Línea", "raza": "Human", "coste": 50000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Borracho", "Cabeza dura", "Placar", "Tembloroso"], "habilidades_primarias": ["G"], "habilidades_secundarias": ["A", "F", "P"]},
+    {"nombre": "Beer Boar", "cantidad": 2, "posicion": "Especial", "raza": "Animal", "coste": 20000, "mv": 5, "fu": 1, "ag": "3+", "ps": "-", "ar": "6+", "habilidades_y_rasgos": ["Canijo", "El balón ni verlo", "Escurridizo", "Esquivar", "Levantar compañero"], "habilidades_primarias": [], "habilidades_secundarias": ["A"]},
+    {"nombre": "Norse Berserker", "cantidad": 2, "posicion": "Blitzer", "raza": "Human", "coste": 90000, "mv": 6, "fu": 3, "ag": "3+", "ps": "5+", "ar": "8+", "habilidades_y_rasgos": ["En pie de un salto", "Furia", "Placar"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A", "P"]},
+    {"nombre": "Valkyrie", "cantidad": 2, "posicion": "Lanzador, Receptor", "raza": "Human", "coste": 95000, "mv": 7, "fu": 3, "ag": "3+", "ps": "3+", "ar": "8+", "habilidades_y_rasgos": ["Agallas", "Atrapar", "Pasar", "Robar balón"], "habilidades_primarias": ["A", "G", "P"], "habilidades_secundarias": ["F"]},
+    {"nombre": "Ulfwerener", "cantidad": 2, "posicion": "Defensor", "raza": "Human", "coste": 105000, "mv": 6, "fu": 4, "ag": "4+", "ps": "6+", "ar": "9+", "habilidades_y_rasgos": ["Furia", "Tembloroso"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A"]},
+    {"nombre": "Yhetee", "cantidad": 1, "posicion": "Grandullón", "raza": "Yhetee", "coste": 140000, "mv": 5, "fu": 5, "ag": "4+", "ps": "6+", "ar": "9+", "habilidades_y_rasgos": ["Furia", "Garras", "Ira descontrolada", "Presencia perturbadora", "Solitario (4+)"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 60000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 185, "pagina_txt": 185, "pagina_impresa": 177, "validado": false, "faqs_revisadas": false}
+}

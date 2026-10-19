@@ -1,0 +1,16 @@
+{
+  "equipo": "Vampires",
+  "equipos_famosos": ["Drakfang Thirsters", "Sartosan Shipwrecks", "Varanheim Vampires"],
+  "liga": "Selectiva de Sylvania",
+  "reglas_especiales": ["Señores de los No Muertos"],
+  "jugadores": [
+    {"nombre": "Thrall Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Human", "subtipo": "Thrall", "coste": 40000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": [], "habilidades_primarias": ["G"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Vampire Runner", "cantidad": 2, "posicion": "Corredor", "raza": "No Muerto", "subtipo": "Vampire", "coste": 100000, "mv": 8, "fu": 3, "ag": "2+", "ps": "3+", "ar": "8+", "habilidades_y_rasgos": ["Mirada hipnótica", "Regeneración", "Sed de sangre (2+)"], "habilidades_primarias": ["A", "G"], "habilidades_secundarias": ["F", "P"]},
+    {"nombre": "Vampire Thrower", "cantidad": 2, "posicion": "Lanzador", "raza": "No Muerto", "subtipo": "Vampire", "coste": 110000, "mv": 6, "fu": 4, "ag": "2+", "ps": "2+", "ar": "9+", "habilidades_y_rasgos": ["Mirada hipnótica", "Pasar", "Regeneración", "Sed de sangre (2+)"], "habilidades_primarias": ["A", "G", "P"], "habilidades_secundarias": ["F"]},
+    {"nombre": "Vampire Blitzer", "cantidad": 2, "posicion": "Blitzer", "raza": "No Muerto", "subtipo": "Vampire", "coste": 110000, "mv": 6, "fu": 4, "ag": "2+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": ["Imparable", "Mirada hipnótica", "Regeneración", "Sed de sangre (3+)"], "habilidades_primarias": ["A", "F", "G"], "habilidades_secundarias": []},
+    {"nombre": "Vargheist", "cantidad": 1, "posicion": "Grandullón", "raza": "No Muerto", "subtipo": "Vampire", "coste": 150000, "mv": 5, "fu": 5, "ag": "4+", "ps": "6+", "ar": "10+", "habilidades_y_rasgos": ["Furia", "Garras", "Regeneración", "Sed de sangre (3+)", "Solitario (4+)"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 60000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 195, "pagina_txt": 195, "pagina_impresa": 187, "validado": false, "faqs_revisadas": false}
+}

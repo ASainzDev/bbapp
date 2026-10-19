@@ -1,0 +1,16 @@
+{
+  "equipo": "Dwarfs",
+  "equipos_famosos": ["Dwarf Giants", "Warhammerers", "Grudge Bearers"],
+  "liga": "Superliga del Fin del Mundo",
+  "reglas_especiales": ["Brutos brutales", "Sobornos y corrupción"],
+  "jugadores": [
+    {"nombre": "Dwarf Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Dwarf", "coste": 70000, "mv": 4, "fu": 3, "ag": "4+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Placar", "Romper defensas"], "habilidades_primarias": ["G", "T"], "habilidades_secundarias": ["F"]},
+    {"nombre": "Dwarf Runner", "cantidad": 2, "posicion": "Corredor", "raza": "Dwarf", "coste": 80000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": ["Cabeza dura", "Esprintar", "Manos seguras"], "habilidades_primarias": ["G", "P"], "habilidades_secundarias": ["F"]},
+    {"nombre": "Dwarf Blitzer", "cantidad": 2, "posicion": "Blitzer", "raza": "Dwarf", "coste": 100000, "mv": 5, "fu": 3, "ag": "4+", "ps": "4+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Placaje defensivo", "Placaje heroico", "Placar"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["P"]},
+    {"nombre": "Troll Slayer", "cantidad": 2, "posicion": "Especial", "raza": "Dwarf", "coste": 95000, "mv": 5, "fu": 3, "ag": "4+", "ps": "5+", "ar": "9+", "habilidades_y_rasgos": ["Agallas", "Cabeza dura", "Furia", "Odio (Troll)", "Placar"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["T"]},
+    {"nombre": "Deathroller", "cantidad": 1, "posicion": "Especial, Grandullón", "raza": "Dwarf", "coste": 170000, "mv": 5, "fu": 7, "ag": "5+", "ps": "-", "ar": "11+", "habilidades_y_rasgos": ["Abrirse paso", "Arma secreta", "El balón ni verlo", "Golpe mortífero", "Imparable", "Jugar sucio", "Mantenerse firme", "Solitario (4+)"], "habilidades_primarias": ["F", "T"], "habilidades_secundarias": ["G"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 60000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 175, "pagina_txt": 175, "pagina_impresa": 167, "validado": false, "faqs_revisadas": false}
+}

@@ -1,0 +1,16 @@
+{
+  "equipo": "Wood Elves",
+  "equipos_famosos": ["Athelorn Avengers", "Bil Bali Archers", "Greenglade Rooters"],
+  "liga": "Liga de los Reinos Elves o Liga de los Bosques",
+  "reglas_especiales": [],
+  "jugadores": [
+    {"nombre": "Wood Elf Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Elf", "coste": 65000, "mv": 7, "fu": 3, "ag": "2+", "ps": "3+", "ar": "8+", "habilidades_y_rasgos": [], "habilidades_primarias": ["A", "G"], "habilidades_secundarias": ["F"]},
+    {"nombre": "Wood Elf Thrower", "cantidad": 2, "posicion": "Lanzador", "raza": "Elf", "coste": 85000, "mv": 7, "fu": 3, "ag": "2+", "ps": "2+", "ar": "8+", "habilidades_y_rasgos": ["Pasar", "Proteger el cuero"], "habilidades_primarias": ["A", "G", "P"], "habilidades_secundarias": ["F"]},
+    {"nombre": "Wood Elf Catcher", "cantidad": 2, "posicion": "Receptor", "raza": "Elf", "coste": 90000, "mv": 8, "fu": 2, "ag": "2+", "ps": "3+", "ar": "8+", "habilidades_y_rasgos": ["Atrapar", "Esprintar", "Esquivar"], "habilidades_primarias": ["A", "G"], "habilidades_secundarias": ["F", "P"]},
+    {"nombre": "Wardancer", "cantidad": 2, "posicion": "Blitzer", "raza": "Elf", "coste": 130000, "mv": 8, "fu": 3, "ag": "2+", "ps": "3+", "ar": "8+", "habilidades_y_rasgos": ["Esquivar", "Placar", "Saltar"], "habilidades_primarias": ["A", "G"], "habilidades_secundarias": ["F", "P"]},
+    {"nombre": "Loren Forest Treeman", "cantidad": 1, "posicion": "Grandullón", "raza": "Treeman", "coste": 120000, "mv": 2, "fu": 6, "ag": "5+", "ps": "5+", "ar": "11+", "habilidades_y_rasgos": ["Brazofuerte", "Cabeza dura", "Echar raíces", "Golpe mortífero", "Lanzar compañero", "Mantenerse firme", "Solitario (4+)"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "P"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 50000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 196, "pagina_txt": 196, "pagina_impresa": 188, "validado": false, "faqs_revisadas": false}
+}

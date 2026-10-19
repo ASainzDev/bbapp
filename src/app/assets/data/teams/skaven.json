@@ -1,0 +1,16 @@
+{
+  "equipo": "Skaven",
+  "equipos_famosos": ["Skavenblight Scramblers", "Warpfire Wanderers", "Snick-Tail Scuttlers"],
+  "liga": "Reto del Inframundo",
+  "reglas_especiales": [],
+  "jugadores": [
+    {"nombre": "Skaven Clanrat", "cantidad": 16, "posicion": "Línea", "raza": "Skaven", "coste": 50000, "mv": 7, "fu": 3, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": [], "habilidades_primarias": ["G", "T"], "habilidades_secundarias": ["A", "F", "M"]},
+    {"nombre": "Skaven Thrower", "cantidad": 2, "posicion": "Lanzador", "raza": "Skaven", "coste": 80000, "mv": 7, "fu": 3, "ag": "3+", "ps": "2+", "ar": "8+", "habilidades_y_rasgos": ["Manos seguras", "Pasar"], "habilidades_primarias": ["G", "P"], "habilidades_secundarias": ["A", "F", "M", "T"]},
+    {"nombre": "Gutter Runner", "cantidad": 2, "posicion": "Corredor", "raza": "Skaven", "coste": 85000, "mv": 9, "fu": 2, "ag": "2+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Apuñalar", "Esquivar"], "habilidades_primarias": ["A", "G", "T"], "habilidades_secundarias": ["F", "M"]},
+    {"nombre": "Skaven Blitzer", "cantidad": 2, "posicion": "Blitzer", "raza": "Skaven", "coste": 90000, "mv": 8, "fu": 3, "ag": "3+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": ["Placar", "Robar balón"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A", "M", "T"]},
+    {"nombre": "Rat Ogre", "cantidad": 1, "posicion": "Grandullón", "raza": "Skaven", "coste": 150000, "mv": 6, "fu": 5, "ag": "4+", "ps": "6+", "ar": "9+", "habilidades_y_rasgos": ["Cola prensil", "Ferocidad animal", "Furia", "Golpe mortífero", "Solitario (4+)"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G", "M"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 50000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 191, "pagina_txt": 191, "pagina_impresa": 183, "validado": false, "faqs_revisadas": false}
+}

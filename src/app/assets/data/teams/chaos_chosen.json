@@ -1,0 +1,17 @@
+{
+  "equipo": "Chaos Chosen",
+  "equipos_famosos": ["Doom Lords", "Everchosen", "Skulls of Katam"],
+  "liga": "Competición del Caos",
+  "reglas_especiales": ["Elegidos de (elegir cualquier alineamiento)"],
+  "restricciones_plantilla": ["Puede tener un único jugador Grandullón, elegido entre las opciones indicadas."],
+  "jugadores": [
+    {"nombre": "Beastmen Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Beastman", "coste": 55000, "mv": 6, "fu": 3, "ag": "3+", "ps": "3+", "ar": "9+", "habilidades_y_rasgos": ["Cabeza dura", "Cuernos"], "habilidades_primarias": ["G", "M"], "habilidades_secundarias": ["A", "F", "P", "T"]},
+    {"nombre": "Chaos Chosen", "cantidad": 4, "posicion": "Defensor", "raza": "Human", "coste": 100000, "mv": 5, "fu": 4, "ag": "3+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Llave de brazo"], "habilidades_primarias": ["F", "G", "M"], "habilidades_secundarias": ["A", "T"]},
+    {"nombre": "Troll", "cantidad": 1, "posicion": "Grandullón", "raza": "Troll", "coste": 115000, "mv": 4, "fu": 5, "ag": "5+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Golpe mortífero", "Lanzar compañero", "Proyectil de vómito", "Realmente estúpido", "Regeneración", "Siempre hambriento", "Solitario (4+)"], "habilidades_primarias": ["F", "M"], "habilidades_secundarias": ["A", "G", "P"]},
+    {"nombre": "Ogre", "cantidad": 1, "posicion": "Grandullón", "raza": "Ogre", "coste": 140000, "mv": 5, "fu": 5, "ag": "4+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Cabeza dura", "Estúpido", "Golpe mortífero", "Lanzar compañero", "Solitario (4+)"], "habilidades_primarias": ["F", "M"], "habilidades_secundarias": ["A", "G"]},
+    {"nombre": "Minotaur", "cantidad": 1, "posicion": "Grandullón", "raza": "Minotaur", "coste": 150000, "mv": 5, "fu": 5, "ag": "4+", "ps": "6+", "ar": "9+", "habilidades_y_rasgos": ["Cabeza dura", "Cuernos", "Furia", "Golpe mortífero", "Ira descontrolada", "Solitario (4+)"], "habilidades_primarias": ["F", "M"], "habilidades_secundarias": ["A", "G"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 50000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 171, "pagina_txt": 171, "pagina_impresa": 163, "validado": false, "faqs_revisadas": false}
+}

@@ -1,0 +1,16 @@
+{
+  "equipo": "Shambling Undead",
+  "equipos_famosos": ["Champions of Death", "Hel-Fenn Helions", "Grim Bay Hackers"],
+  "liga": "Selectiva de Sylvania",
+  "reglas_especiales": ["Señores de los No Muertos"],
+  "jugadores": [
+    {"nombre": "Skeleton Lineman", "cantidad": 16, "posicion": "Línea", "raza": "No Muerto", "subtipo": "Skeleton", "coste": 40000, "mv": 5, "fu": 3, "ag": "4+", "ps": "6+", "ar": "8+", "habilidades_y_rasgos": ["Cabeza dura", "Regeneración"], "habilidades_primarias": ["G"], "habilidades_secundarias": ["A", "F", "T"]},
+    {"nombre": "Zombie Lineman", "cantidad": 16, "posicion": "Línea", "raza": "No Muerto", "subtipo": "Zombie", "coste": 40000, "mv": 4, "fu": 3, "ag": "4+", "ps": "6+", "ar": "9+", "habilidades_y_rasgos": ["Piquete de ojos", "Regeneración", "Tembloroso"], "habilidades_primarias": ["G", "T"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Ghoul Runner", "cantidad": 2, "posicion": "Corredor", "raza": "No Muerto", "subtipo": "Ghoul", "coste": 75000, "mv": 7, "fu": 3, "ag": "3+", "ps": "3+", "ar": "8+", "habilidades_y_rasgos": ["Esquivar", "Regeneración"], "habilidades_primarias": ["A", "G"], "habilidades_secundarias": ["F", "P", "T"]},
+    {"nombre": "Wight Blitzer", "cantidad": 2, "posicion": "Blitzer", "raza": "No Muerto", "subtipo": "Skeleton", "coste": 95000, "mv": 6, "fu": 3, "ag": "3+", "ps": "5+", "ar": "9+", "habilidades_y_rasgos": ["Cabeza dura", "Placaje defensivo", "Placar", "Regeneración"], "habilidades_primarias": ["F", "G"], "habilidades_secundarias": ["A", "T"]},
+    {"nombre": "Mummy", "cantidad": 2, "posicion": "Defensor, Grandullón", "raza": "No Muerto", "subtipo": "Mummy", "coste": 125000, "mv": 3, "fu": 5, "ag": "5+", "ps": "6+", "ar": "10+", "habilidades_y_rasgos": ["Golpe mortífero", "Regeneración"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["A", "G"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 70000},
+  "apotecario": false,
+  "metadata": {"pagina_pdf": 190, "pagina_txt": 190, "pagina_impresa": 182, "validado": false, "faqs_revisadas": false}
+}

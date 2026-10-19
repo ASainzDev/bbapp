@@ -1,0 +1,20 @@
+{
+  "equipo": "Underworld Denizens",
+  "equipos_famosos": ["Underworld Creepers", "Cragmere Critters", "Fungal Cowboys"],
+  "liga": "Reto del Inframundo",
+  "reglas_especiales": ["Sobornos y corrupción"],
+  "restricciones_plantilla": ["Puede tener un único jugador Grandullón, elegido entre las opciones indicadas."],
+  "jugadores": [
+    {"nombre": "Goblin Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Goblin", "coste": 40000, "mv": 6, "fu": 2, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Escurridizo", "Esquivar", "Humanoide bala"], "habilidades_primarias": ["A", "M", "T"], "habilidades_secundarias": ["G", "F", "P"]},
+    {"nombre": "Snotling Lineman", "cantidad": 6, "posicion": "Línea", "raza": "Snotling", "coste": 15000, "mv": 5, "fu": 1, "ag": "3+", "ps": "4+", "ar": "6+", "habilidades_y_rasgos": ["Canijo", "Echarse a un lado", "Escurridizo", "Esquivar", "Humanoide bala", "Insignificante"], "habilidades_primarias": ["A", "M", "T"], "habilidades_secundarias": ["G"]},
+    {"nombre": "Skaven Clanrat", "cantidad": 3, "posicion": "Línea", "raza": "Skaven", "coste": 50000, "mv": 7, "fu": 3, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Animosidad (Goblin)"], "habilidades_primarias": ["G", "M", "T"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Skaven Thrower", "cantidad": 1, "posicion": "Lanzador", "raza": "Skaven", "coste": 80000, "mv": 7, "fu": 3, "ag": "3+", "ps": "2+", "ar": "8+", "habilidades_y_rasgos": ["Animosidad (Goblin)", "Manos seguras", "Pasar"], "habilidades_primarias": ["G", "M", "P"], "habilidades_secundarias": ["A", "F", "T"]},
+    {"nombre": "Gutter Runner", "cantidad": 1, "posicion": "Corredor", "raza": "Skaven", "coste": 85000, "mv": 9, "fu": 2, "ag": "2+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Animosidad (Goblin)", "Apuñalar", "Esquivar"], "habilidades_primarias": ["A", "G", "M", "T"], "habilidades_secundarias": ["F"]},
+    {"nombre": "Skaven Blitzer", "cantidad": 1, "posicion": "Blitzer", "raza": "Skaven", "coste": 90000, "mv": 8, "fu": 3, "ag": "3+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": ["Animosidad (Goblin)", "Placar", "Robar balón"], "habilidades_primarias": ["F", "G", "M"], "habilidades_secundarias": ["A", "T"]},
+    {"nombre": "Troll", "cantidad": 1, "posicion": "Grandullón", "raza": "Troll", "coste": 115000, "mv": 4, "fu": 5, "ag": "5+", "ps": "5+", "ar": "10+", "habilidades_y_rasgos": ["Golpe mortífero", "Lanzar compañero", "Proyectil de vómito", "Realmente estúpido", "Regeneración", "Siempre hambriento", "Solitario (4+)"], "habilidades_primarias": ["F", "M"], "habilidades_secundarias": ["A", "G", "P"]},
+    {"nombre": "Rat Ogre", "cantidad": 1, "posicion": "Grandullón", "raza": "Skaven", "coste": 150000, "mv": 6, "fu": 5, "ag": "4+", "ps": "6+", "ar": "9+", "habilidades_y_rasgos": ["Cola prensil", "Ferocidad animal", "Furia", "Golpe mortífero", "Solitario (4+)"], "habilidades_primarias": ["F", "M"], "habilidades_secundarias": ["A", "G"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 70000},
+  "apotecario": true,
+  "metadata": {"pagina_pdf": 194, "pagina_txt": 194, "pagina_impresa": 186, "validado": false, "faqs_revisadas": false}
+}

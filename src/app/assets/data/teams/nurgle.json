@@ -1,0 +1,15 @@
+{
+  "equipo": "Nurgle",
+  "equipos_famosos": ["Nurgle's Rotters", "Bile-City Blightkings", "Diseased Destroyers"],
+  "liga": "Competición del Caos",
+  "reglas_especiales": ["Brutos brutales", "Elegidos de Nurgle"],
+  "jugadores": [
+    {"nombre": "Rotter Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Human", "coste": 40000, "mv": 5, "fu": 3, "ag": "4+", "ps": "6+", "ar": "9+", "habilidades_y_rasgos": ["Descomposición", "Infectado"], "habilidades_primarias": ["G", "M", "T"], "habilidades_secundarias": ["A", "F"]},
+    {"nombre": "Pestigor", "cantidad": 2, "posicion": "Corredor", "raza": "Beastman", "coste": 70000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": ["Cabeza dura", "Cuernos", "Equilibrio firme", "Infectado", "Regeneración"], "habilidades_primarias": ["F", "G", "M"], "habilidades_secundarias": ["A", "P", "T"]},
+    {"nombre": "Bloater", "cantidad": 4, "posicion": "Defensor", "raza": "Human", "coste": 110000, "mv": 4, "fu": 4, "ag": "4+", "ps": "6+", "ar": "10+", "habilidades_y_rasgos": ["Apariencia asquerosa", "Infectado", "Mantenerse firme", "Presencia perturbadora", "Regeneración", "Tembloroso"], "habilidades_primarias": ["F", "G", "M"], "habilidades_secundarias": ["A", "T"]},
+    {"nombre": "Rotspawn", "cantidad": 1, "posicion": "Grandullón", "raza": "Spawn", "coste": 140000, "mv": 4, "fu": 5, "ag": "5+", "ps": "6+", "ar": "10+", "habilidades_y_rasgos": ["Apariencia asquerosa", "Golpe mortífero", "Infectado", "Levantar compañero", "Presencia perturbadora", "Realmente estúpido", "Regeneración", "Solitario (4+)", "Tentáculos"], "habilidades_primarias": ["F"], "habilidades_secundarias": ["G", "M", "T"]}
+  ],
+  "segundas_oportunidades": {"cantidad": 8, "coste_cada_una": 60000},
+  "apotecario": false,
+  "metadata": {"pagina_pdf": 186, "pagina_txt": 186, "pagina_impresa": 178, "validado": false, "faqs_revisadas": false}
+}
