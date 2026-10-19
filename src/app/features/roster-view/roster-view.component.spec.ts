@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RosterViewPage } from './roster-view.page';
+import { RosterViewComponent } from './roster-view.component';
 
-describe('RosterViewPage', () => {
-  let component: RosterViewPage;
-  let fixture: ComponentFixture<RosterViewPage>;
+describe('RosterViewComponent', () => {
+  let component: RosterViewComponent;
+  let fixture: ComponentFixture<RosterViewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RosterViewPage],
+      imports: [RosterViewComponent],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(RosterViewPage);
+    fixture = TestBed.createComponent(RosterViewComponent);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

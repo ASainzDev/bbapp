@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { RosterSelectorComponent } from '../../../features/roster-selector/roster-selector/roster-selector.component';
+import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [RosterSelectorComponent],
+  imports: [RouterLink],
   selector: 'app-home',
   styleUrl: './home.page.css',
   templateUrl: './home.page.html',

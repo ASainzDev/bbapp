@@ -1,0 +1,14 @@
+
+
+@for(team of teams; track team.id) {
+  <app-roster-button
+    [roster] = team
+    (selectedRoster)="selectedRoster.set($event)">
+  </app-roster-button>
+}
+
+<router-outlet></router-outlet>
+
+@if(selectedRoster(); as roster){
+  <app-roster-view [selectedRoster]="roster"></app-roster-view>
+}

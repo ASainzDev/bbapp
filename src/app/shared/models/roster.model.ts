@@ -1,4 +1,4 @@
-interface Roster {
+export interface Roster {
   equipo: string;
   equipos_famosos: string[];
   liga: string;

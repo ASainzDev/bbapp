@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { RosterSelectorComponent } from './roster-selector.component';
+import { RosterSelectorPage } from './roster-selector.page';
 
-describe('RosterSelectorComponent', () => {
-  let component: RosterSelectorComponent;
-  let fixture: ComponentFixture<RosterSelectorComponent>;
+describe('RosterSelectorPage', () => {
+  let component: RosterSelectorPage;
+  let fixture: ComponentFixture<RosterSelectorPage>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RosterSelectorComponent],
+      imports: [RosterSelectorPage],
     }).compileComponents();
 
-    fixture = TestBed.createComponent(RosterSelectorComponent);
+    fixture = TestBed.createComponent(RosterSelectorPage);
     component = fixture.componentInstance;
     await fixture.whenStable();
   });

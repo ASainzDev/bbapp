@@ -1,0 +1,7 @@
+@if(roster.hasValue()){
+    {{ roster.value().equipo}}
+
+    @for(team of roster.value().equipos_famosos; track $index){
+        <span>{{ $index }}</span><span>{{ team }}</span>
+    }
+}
