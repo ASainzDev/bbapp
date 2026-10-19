@@ -22,6 +22,11 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "*.json",
+                "input": "src/app/assets/data/teams",
+                "output": "assets/data/teams"
               }
             ],
             "styles": [

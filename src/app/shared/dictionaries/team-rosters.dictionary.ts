@@ -1,0 +1,36 @@
+import type { TeamIdentifiers } from '../models/team-identifiers.model';
+
+const teamRosters: Record<string, TeamIdentifiers> = {
+    amazons: { id: 'amazons', name: 'Amazons' },
+    black_orcs: { id: 'black_orcs', name: 'Black Orcs' },
+    bretonnians: { id: 'bretonnians', name: 'Bretonnians' },
+    chaos_chosen: { id: 'chaos_chosen', name: 'Chaos Chosen' },
+    chaos_dwarfs: { id: 'chaos_dwarfs', name: 'Chaos Dwarfs' },
+    chaos_renegades: { id: 'chaos_renegades', name: 'Chaos Renegades' },
+    dark_elves: { id: 'dark_elves', name: 'Dark Elves' },
+    dwarfs: { id: 'dwarfs', name: 'Dwarfs' },
+    elven_union: { id: 'elven_union', name: 'Elven Union' },
+    gnomes: { id: 'gnomes', name: 'Gnomes' },
+    goblins: { id: 'goblins', name: 'Goblins' },
+    halflings: { id: 'halflings', name: 'Halflings' },
+    high_elves: { id: 'high_elves', name: 'High Elves' },
+    humans: { id: 'humans', name: 'Humans' },
+    imperial_nobility: { id: 'imperial_nobility', name: 'Imperial Nobility' },
+    khorne: { id: 'khorne', name: 'Khorne' },
+    lizardmen: { id: 'lizardmen', name: 'Lizardmen' },
+    necromantic_horror: { id: 'necromantic_horror', name: 'Necromantic Horror' },
+    norse: { id: 'norse', name: 'Norse' },
+    nurgle: { id: 'nurgle', name: 'Nurgle' },
+    ogres: { id: 'ogres', name: 'Ogres' },
+    old_world_alliance: { id: 'old_world_alliance', name: 'Old World Alliance' },
+    orcs: { id: 'orcs', name: 'Orcs' },
+    shambling_undead: { id: 'shambling_undead', name: 'Shambling Undead' },
+    skaven: { id: 'skaven', name: 'Skaven' },
+    snotlings: { id: 'snotlings', name: 'Snotlings' },
+    tomb_kings: { id: 'tomb_kings', name: 'Tomb Kings' },
+    underworld_denizens: { id: 'underworld_denizens', name: 'Underworld Denizens' },
+    vampires: { id: 'vampires', name: 'Vampires' },
+    wood_elves: { id: 'wood_elves', name: 'Wood Elves' },
+};
+
+export default teamRosters;
