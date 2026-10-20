@@ -4,4 +4,54 @@
     @for(team of roster.value().equipos_famosos; track $index){
         <span>{{ $index }}</span><span>{{ team }}</span>
     }
+
+    <table>
+        <tr>
+            @for(head of columnsHeaders; track $index){
+                <th>{{ head }}</th>
+            }
+        </tr>
+        @for(player of tableColumns(); track $index){
+            <tr>
+                <td>
+                    {{ player.nombre }}
+                </td>
+                <td>
+                    {{ player.cantidad }}
+                </td>
+                <td>
+                    {{ player.posicion }}
+                </td>
+                <td>
+                    {{ player.raza }}
+                </td>
+                <td>
+                    {{ player.coste }}
+                </td>
+                <td>
+                    {{ player.mv }}
+                </td>
+                <td>
+                    {{ player.fu }}
+                </td>
+                <td>
+                    {{ player.ag }}
+                </td>
+                <td>
+                    {{ player.ps }}
+                </td>
+                <td>
+                    {{ player.ar }}
+                </td><td>
+                    {{ player.habilidades_y_rasgos }}
+                </td>
+                <td>
+                    {{ player.habilidades_primarias }}
+                </td>
+                <td>
+                    {{ player.habilidades_secundarias }}
+                </td>
+            </tr>
+        }
+    </table>
 }

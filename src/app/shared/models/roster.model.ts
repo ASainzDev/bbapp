@@ -22,7 +22,7 @@ interface Segundasoportunidades {
   coste_cada_una: number;
 }
 
-interface Jugador {
+export interface Jugador {
   nombre: string;
   cantidad: number;
   posicion: string;
