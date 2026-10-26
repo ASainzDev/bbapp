@@ -1,57 +1,33 @@
 @if(roster.hasValue()){
-    {{ roster.value().equipo}}
+{{ roster.value().equipo}}
 
-    @for(team of roster.value().equipos_famosos; track $index){
-        <span>{{ $index }}</span><span>{{ team }}</span>
-    }
+@for(team of roster.value().equipos_famosos; track $index){
+<span>{{ $index }}</span><span>{{ team }}</span>
+}
 
-    <table>
+<table>
+    <thead>
         <tr>
-            @for(head of columnsHeaders; track $index){
-                <th>{{ head }}</th>
+            @for(head of columnsHeaders; track head.key){
+            <th>{{ head.label }}</th>
             }
         </tr>
-        @for(player of tableColumns(); track $index){
+    </thead>
+    <tbody>
+        @for(player of tableColumns() ?? []; track player.nombre){
             <tr>
-                <td>
-                    {{ player.nombre }}
-                </td>
-                <td>
-                    {{ player.cantidad }}
-                </td>
-                <td>
-                    {{ player.posicion }}
-                </td>
-                <td>
-                    {{ player.raza }}
-                </td>
-                <td>
-                    {{ player.coste }}
-                </td>
-                <td>
-                    {{ player.mv }}
-                </td>
-                <td>
-                    {{ player.fu }}
-                </td>
-                <td>
-                    {{ player.ag }}
-                </td>
-                <td>
-                    {{ player.ps }}
-                </td>
-                <td>
-                    {{ player.ar }}
-                </td><td>
-                    {{ player.habilidades_y_rasgos }}
-                </td>
-                <td>
-                    {{ player.habilidades_primarias }}
-                </td>
-                <td>
-                    {{ player.habilidades_secundarias }}
-                </td>
+                @for(col of columnsHeaders; track col.key){
+                    <td> {{  player[col.key]  }}</td>
+                }
             </tr>
         }
-    </table>
+    </tbody>
+</table>
+}@else if(roster.isLoading()){
+    <p>Cargando...</p>
+}@else if (roster.error()){
+    <p>No se ha podido cargar el roster</p>
+    <button>Reintentar</button>
+}@else {
+    <span>No se ha encontrado un roster definidos por el nombre a buscar</span>
 }
