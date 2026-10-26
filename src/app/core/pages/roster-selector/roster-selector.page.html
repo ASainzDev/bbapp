@@ -9,8 +9,9 @@
 
 <router-outlet></router-outlet>
 
-@if(selectedRoster(); as roster){
-  <app-roster-view [selectedRoster]="roster" (creation)="handleCreationMode($event)"></app-roster-view>
-}@else if(creationMode()){
+@if(creationMode()){
   
+}
+@if(selectedRoster(); as roster){
+  <app-roster-view [selectedRoster]="roster" (creation)="handleCreationMode($event)" (resetSelectedRoster)="handleRosterReset($event)"></app-roster-view>
 }

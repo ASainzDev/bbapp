@@ -3,6 +3,7 @@ import { TeamIdentifiers } from '../../shared/models/team-identifiers.model';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { RosterService } from '../../shared/services/roster-service/roster.service';
 import { Jugador } from '../../shared/models/roster.model';
+import { TeamCreationService } from '../../shared/services/team-creation-service/team-creation.service';
 
 
 type PlayerColumn = {
@@ -39,7 +40,10 @@ export class RosterViewComponent {
 
   private rosterService = inject(RosterService)
 
+  private creationService = inject(TeamCreationService)
+
   @Output() creation: EventEmitter<boolean> = new EventEmitter;
+  @Output() resetSelectedRoster: EventEmitter<undefined> = new EventEmitter;
   
   readonly roster = rxResource({
     params: () => ({ id: this.selectedRoster().id }),
@@ -47,6 +51,10 @@ export class RosterViewComponent {
   });
   
   navigateToCreation() {
+    if(this.roster.hasValue()){
+      this.creationService.setTeamTemplate(this.roster.value())
+    }
+    this.resetSelectedRoster.emit(undefined)
     this.creation.emit(true)
   }
   
