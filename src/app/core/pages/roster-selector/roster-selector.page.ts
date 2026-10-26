@@ -14,5 +14,10 @@ import { RosterViewComponent } from '../../../features/roster-view/roster-view.c
 export class RosterSelectorPage {
   readonly teams: TeamIdentifiers[] = Object.values(teamRosters);
 
+  creationMode = signal(false)
+  
   readonly selectedRoster = signal<TeamIdentifiers | undefined>(undefined)
+  handleCreationMode($event: boolean) {
+    this.creationMode.set($event)
+  }
 }

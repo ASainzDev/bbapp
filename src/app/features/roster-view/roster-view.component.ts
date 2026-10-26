@@ -1,4 +1,4 @@
-import { Component, computed, inject, input, Signal } from '@angular/core';
+import { Component, computed, EventEmitter, inject, input, Output, Signal } from '@angular/core';
 import { TeamIdentifiers } from '../../shared/models/team-identifiers.model';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { RosterService } from '../../shared/services/roster-service/roster.service';
@@ -17,9 +17,9 @@ type PlayerColumn = {
 })
 export class RosterViewComponent {
   readonly selectedRoster = input.required<TeamIdentifiers>();
-
+  
   readonly tableColumns: Signal<Jugador[] | undefined> = computed(() => this.roster.value()?.jugadores)
-
+  
   readonly columnsHeaders: PlayerColumn[] = [
     { key: 'nombre', label:'Jugador'},
     { key: 'cantidad', label:'Máximo'},
@@ -39,9 +39,15 @@ export class RosterViewComponent {
 
   private rosterService = inject(RosterService)
 
+  @Output() creation: EventEmitter<boolean> = new EventEmitter;
+  
   readonly roster = rxResource({
     params: () => ({ id: this.selectedRoster().id }),
     stream: ({ params }) => this.rosterService.getRosterInfo(params.id),
   });
-
+  
+  navigateToCreation() {
+    this.creation.emit(true)
+  }
+  
 }

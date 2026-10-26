@@ -23,6 +23,11 @@
         }
     </tbody>
 </table>
+
+<div>
+    <!-- Aquí vendría una call to action para crear un equipo. Por ahora solo un botón -->
+    <button (click)="navigateToCreation()">Funda tu equipo</button>
+</div>
 }@else if(roster.isLoading()){
     <p>Cargando...</p>
 }@else if (roster.error()){
