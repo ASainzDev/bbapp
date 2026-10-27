@@ -4,6 +4,7 @@ import { RosterButtonComponent } from './roster-button/roster-button.component';
 import type { TeamIdentifiers } from '../../../shared/models/team-identifiers.model';
 import teamRosters from '../../../shared/dictionaries/team-rosters.dictionary';
 import { RosterViewComponent } from '../../../features/roster-view/roster-view.component';
+import { Roster } from '../../../shared/models/roster.model';
 
 @Component({
   imports: [RosterButtonComponent, RouterOutlet, RosterViewComponent],
@@ -14,15 +15,22 @@ import { RosterViewComponent } from '../../../features/roster-view/roster-view.c
 export class RosterSelectorPage {
   readonly teams: TeamIdentifiers[] = Object.values(teamRosters);
   
-  creationMode = signal(false)
+  creationMode = signal(false);
   
-  selectedRoster = signal<TeamIdentifiers | undefined>(undefined)
+  selectedRoster = signal<TeamIdentifiers | undefined>(undefined);
+
+  userSelectedRosterTemplate = signal<Roster | undefined>(undefined);
   
-  handleCreationMode($event: boolean) {
+  handleCreationMode($event: boolean): void {
     this.creationMode.set($event)
   }
   
-  handleRosterReset($event: undefined) {
+  handleRosterReset($event: undefined): void {
     this.selectedRoster.set($event)
+  }
+
+  handleCreationSelectRoster($event: Roster): void {
+    this.selectedRoster.set(undefined);
+    this.userSelectedRosterTemplate.set($event);
   }
 }

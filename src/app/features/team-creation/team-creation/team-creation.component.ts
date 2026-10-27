@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
+import { Roster } from '../../../shared/models/roster.model';
 
 @Component({
   imports: [],
@@ -6,4 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './team-creation.component.css',
   templateUrl: './team-creation.component.html',
 })
-export class TeamCreationComponent {}
+export class TeamCreationComponent {
+
+  userSelectedRosterTemplate = input.required<Roster>;
+}

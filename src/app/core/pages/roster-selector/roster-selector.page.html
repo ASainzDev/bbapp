@@ -9,9 +9,9 @@
 
 <router-outlet></router-outlet>
 
-@if(creationMode()){
-  
+@if(creationMode() && userSelectedRosterTemplate()){
+  <app-team-creation [userSelectedRosterTemplate] = "userSelectedRosterTemplate"></app-team-creation>
 }
 @if(selectedRoster(); as roster){
-  <app-roster-view [selectedRoster]="roster" (creation)="handleCreationMode($event)" (resetSelectedRoster)="handleRosterReset($event)"></app-roster-view>
+  <app-roster-view [selectedRoster]="roster" (creation)="handleCreationMode($event)" (selectedTeamRosterTemplate)="handleCreationSelectRoster($event)"></app-roster-view>
 }

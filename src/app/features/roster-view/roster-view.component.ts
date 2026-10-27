@@ -2,9 +2,7 @@ import { Component, computed, EventEmitter, inject, input, Output, Signal } from
 import { TeamIdentifiers } from '../../shared/models/team-identifiers.model';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { RosterService } from '../../shared/services/roster-service/roster.service';
-import { Jugador } from '../../shared/models/roster.model';
-import { TeamCreationService } from '../../shared/services/team-creation-service/team-creation.service';
-
+import { Jugador, Roster } from '../../shared/models/roster.model';
 
 type PlayerColumn = {
   key: keyof Jugador;
@@ -40,21 +38,16 @@ export class RosterViewComponent {
 
   private rosterService = inject(RosterService)
 
-  private creationService = inject(TeamCreationService)
-
   @Output() creation: EventEmitter<boolean> = new EventEmitter;
-  @Output() resetSelectedRoster: EventEmitter<undefined> = new EventEmitter;
-  
+  @Output() selectedTeamRosterTemplate: EventEmitter<Roster> = new EventEmitter;
+
   readonly roster = rxResource({
     params: () => ({ id: this.selectedRoster().id }),
     stream: ({ params }) => this.rosterService.getRosterInfo(params.id),
   });
   
-  navigateToCreation() {
-    if(this.roster.hasValue()){
-      this.creationService.setTeamTemplate(this.roster.value())
-    }
-    this.resetSelectedRoster.emit(undefined)
+  navigateToCreation(): void {
+    this.selectedTeamRosterTemplate.emit(this.roster.value());
     this.creation.emit(true)
   }
   
