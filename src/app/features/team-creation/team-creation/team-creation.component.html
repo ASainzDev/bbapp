@@ -3,3 +3,24 @@
 <!-- Aquí debería de ir un input con el nombre que se le quiere dar al equipo -->
 
 <!-- Aquí voy a mostrar las opciones que tiene el usuario para añadir. Será un botón por jugador del roster con un indicador de los que tiene actualmente y el límite. Y aquí me acabo de dar cuenta de los problemas de usar un servicio en vez de hacer que el padre pase todos los elementos a este hijo. Pero por ahora seguimos así. -->
+
+@for(player of playerButtons(); track player.nombre){
+    <app-hire-player-button [player]="player" [atLimit]="(this.teamData.players_roster[player.nombre]?.length ?? 0) >= player.cantidad" (playerHired)="handlePlayerHiring($event)"></app-hire-player-button>
+}
+
+<div>
+    <!-- <span>Aquí iría el nombre</span> -->
+    <span> TV: {{this.teamData.team_value}}</span>
+</div>
+
+<!-- Aquí añado los jugadore según la posición. -->
+
+@for(position of this.teamData.players_roster | keyvalue; track position.key){
+    <div>
+        <h3>{{ position.key }}</h3>
+
+        @for(player of position.value; track $index){
+            <span>{{ player.playerInfo.nombre ?? 'Sin Nombre'}}</span>
+        }
+    </div>
+}
