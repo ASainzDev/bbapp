@@ -4,6 +4,24 @@
 
 <!-- Aquí voy a mostrar las opciones que tiene el usuario para añadir. Será un botón por jugador del roster con un indicador de los que tiene actualmente y el límite. Y aquí me acabo de dar cuenta de los problemas de usar un servicio en vez de hacer que el padre pase todos los elementos a este hijo. Pero por ahora seguimos así. -->
 
+<button type="button" (click)="cancelCreation()">Cancelar creación</button>
+
+<section>
+    <label for="rerolls">Segundas oportunidades</label>
+    <button type="button" aria-label="Quitar una segunda oportunidad" (click)="decreaseRerolls()" [disabled]="teamData.rerolls <= 0">−</button>
+    <input id="rerolls" type="number" [value]="teamData.rerolls" min="0" [max]="userSelectedRosterTemplate().segundas_oportunidades.cantidad" step="1" readonly>
+    <button type="button" aria-label="Añadir una segunda oportunidad" (click)="increaseRerolls()" [disabled]="teamData.rerolls >= userSelectedRosterTemplate().segundas_oportunidades.cantidad || teamData.gold_reserve < userSelectedRosterTemplate().segundas_oportunidades.coste_cada_una">+</button>
+    <span>Coste: {{ userSelectedRosterTemplate().segundas_oportunidades.coste_cada_una }}</span>
+</section>
+
+<section>
+    <label for="fan-factor">Factor fan</label>
+    <button type="button" aria-label="Reducir factor fan" (click)="decreaseFanFactor()" [disabled]="teamData.fan_factor <= 1">−</button>
+    <input id="fan-factor" type="number" [value]="teamData.fan_factor" min="1" max="3" step="1" readonly>
+    <button type="button" aria-label="Aumentar factor fan" (click)="increaseFanFactor()" [disabled]="teamData.fan_factor >= 3 || teamData.gold_reserve < fan_factor_cost">+</button>
+    <span>Coste por mejora: {{ fan_factor_cost }}</span>
+</section>
+
 @for(player of playerButtons(); track player.nombre){
     <app-hire-player-button [player]="player" [atLimit]="(this.teamData.players_roster[player.nombre]?.length ?? 0) >= player.cantidad" (playerHired)="handlePlayerHiring($event)"></app-hire-player-button>
 }
@@ -11,6 +29,7 @@
 <div>
     <!-- <span>Aquí iría el nombre</span> -->
     <span> TV: {{this.teamData.team_value}}</span>
+    <span>Reserva de oro: {{this.teamData.gold_reserve}}</span>
 </div>
 
 <!-- Aquí añado los jugadore según la posición. -->

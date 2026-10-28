@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { RosterButtonComponent } from './roster-button/roster-button.component';
 import type { TeamIdentifiers } from '../../../shared/models/team-identifiers.model';
@@ -6,6 +6,7 @@ import teamRosters from '../../../shared/dictionaries/team-rosters.dictionary';
 import { RosterViewComponent } from '../../../features/roster-view/roster-view.component';
 import { Roster } from '../../../shared/models/roster.model';
 import { TeamCreationComponent } from '../../../features/team-creation/team-creation/team-creation.component';
+import { NavigationCacheService } from '../../../shared/services/navigation-service/navigation-cache.service';
 
 @Component({
   imports: [RosterButtonComponent, RouterOutlet, RosterViewComponent, TeamCreationComponent],
@@ -14,6 +15,8 @@ import { TeamCreationComponent } from '../../../features/team-creation/team-crea
   templateUrl: './roster-selector.page.html',
 })
 export class RosterSelectorPage {
+  private readonly navigationCacheService = inject(NavigationCacheService);
+
   readonly teams: TeamIdentifiers[] = Object.values(teamRosters);
   
   creationMode = signal(false);
@@ -30,7 +33,14 @@ export class RosterSelectorPage {
     this.selectedRoster.set($event)
   }
 
+  handleTeamCreationCancelled(): void {
+    this.creationMode.set(false);
+    this.selectedRoster.set(undefined);
+    this.userRosterTemplate.set(undefined);
+  }
+
   handleCreationSelectRoster($event: Roster): void {
+    this.navigationCacheService.clearProvisionalTeam();
     this.selectedRoster.set(undefined);
     this.userRosterTemplate.set($event);
   }

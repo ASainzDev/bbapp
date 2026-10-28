@@ -1,9 +1,10 @@
-import { Component, computed, input, OnInit, Signal } from '@angular/core';
+import { Component, computed, EventEmitter, inject, input, OnInit, Output, Signal } from '@angular/core';
 import { Jugador, Roster } from '../../../shared/models/roster.model';
 import { UserTeamTemplate } from '../../../shared/models/user-team-template.model';
 import { HirePlayerButtonComponent } from '../components/hire-player-button/hire-player-button.component';
 import { UserTeamPlayer } from '../../../shared/models/user-team-player.interface';
 import { KeyValuePipe } from '@angular/common';
+import { NavigationCacheService } from '../../../shared/services/navigation-service/navigation-cache.service';
 
 
 @Component({
@@ -15,8 +16,12 @@ import { KeyValuePipe } from '@angular/common';
 export class TeamCreationComponent implements OnInit {
 
   readonly userSelectedRosterTemplate = input.required<Roster>();
+  private readonly navigationCacheService = inject(NavigationCacheService);
+
+  @Output() creationCancelled = new EventEmitter<void>();
 
   teamData: UserTeamTemplate;
+  readonly fan_factor_cost = 10000;
 
   readonly playerButtons: Signal<Pick<Jugador, "nombre" | "cantidad" | "coste">[]> = computed(() => this.userSelectedRosterTemplate().jugadores.map(({ nombre, cantidad, coste }) => ({ nombre, cantidad, coste })));
 
@@ -33,11 +38,56 @@ export class TeamCreationComponent implements OnInit {
 
 
   ngOnInit(): void {
-
+    this.teamData = this.navigationCacheService.getProvisionalTeam() ?? this.teamData;
   }
 
   handlePlayerHiring($event: string) {
     this.hiringProcess($event)
+  }
+
+  increaseRerolls(): void {
+    const rerollInfo = this.userSelectedRosterTemplate().segundas_oportunidades;
+    if (this.teamData.rerolls >= rerollInfo.cantidad || this.teamData.gold_reserve < rerollInfo.coste_cada_una) return;
+
+    this.teamData.rerolls += 1;
+    this.teamData.gold_reserve -= rerollInfo.coste_cada_una;
+    this.teamData.team_value += rerollInfo.coste_cada_una;
+    this.provisionalTeamToCahe();
+  }
+
+  decreaseRerolls(): void {
+    const rerollInfo = this.userSelectedRosterTemplate().segundas_oportunidades;
+    if (this.teamData.rerolls <= 0) return;
+
+    this.teamData.rerolls -= 1;
+    this.teamData.gold_reserve += rerollInfo.coste_cada_una;
+    this.teamData.team_value -= rerollInfo.coste_cada_una;
+    this.provisionalTeamToCahe();
+  }
+
+  increaseFanFactor(): void {
+    if (this.teamData.fan_factor >= 3 || this.teamData.gold_reserve < this.fan_factor_cost) return;
+
+    this.teamData.fan_factor += 1;
+    this.teamData.gold_reserve -= this.fan_factor_cost;
+    this.provisionalTeamToCahe();
+  }
+
+  decreaseFanFactor(): void {
+    if (this.teamData.fan_factor <= 1) return;
+
+    this.teamData.fan_factor -= 1;
+    this.teamData.gold_reserve += this.fan_factor_cost;
+    this.provisionalTeamToCahe();
+  }
+
+  cancelCreation(): void {
+    this.navigationCacheService.clearProvisionalTeam();
+    this.creationCancelled.emit();
+  }
+
+  provisionalTeamToCahe(): void {
+    this.navigationCacheService.cacheProvisionalTeam(this.teamData);
   }
 
   private hiringProcess(playerName: string): void {
@@ -71,5 +121,6 @@ export class TeamCreationComponent implements OnInit {
     this.teamData.players_roster[playerName] = [...currentPositionLineUp, newProminentStar];
     this.teamData.gold_reserve -= playerStats.coste;
     this.teamData.team_value += newProminentStar.team_value_count;
+    this.provisionalTeamToCahe();
   }
 }

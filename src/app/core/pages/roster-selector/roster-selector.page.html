@@ -5,7 +5,7 @@
 
 @if(creationMode()){
   @if(userRosterTemplate(); as roster){
-    <app-team-creation [userSelectedRosterTemplate]="roster"></app-team-creation>
+    <app-team-creation [userSelectedRosterTemplate]="roster" (creationCancelled)="handleTeamCreationCancelled()"></app-team-creation>
   }
 }
 @else if(selectedRoster(); as roster){
