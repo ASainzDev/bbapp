@@ -71,6 +71,19 @@ describe('TeamCreationComponent', () => {
     expect(fundTeamButton().disabled).toBe(true);
   });
 
+  it('shows the current values and validation for the roster creation rules', () => {
+    const validationPanel = fixture.nativeElement.querySelector('[aria-labelledby="team-validation-title"]') as HTMLElement;
+
+    expect(validationPanel.textContent).toContain('Jugadores: 0');
+    expect(validationPanel.textContent).toContain('Segundas oportunidades: 0 / 8');
+    expect(validationPanel.textContent).toContain('Factor fan: 1');
+    expect(validationPanel.textContent).toContain('Apotecario: 0 / 1');
+    expect(validationPanel.textContent).toContain('Animadoras: 0');
+    expect(validationPanel.textContent).toContain('Ayudantes de entrenador: 0');
+    expect(validationPanel.textContent).toContain('Reserva de oro: 1000000');
+    expect(validationPanel.textContent).toContain('Valor del equipo actual: 0');
+  });
+
   it('restores a provisional team and validates it on initialization', () => {
     const provisionalTeam: UserTeamTemplate = {
       team_name: 'Equipo recuperado',
@@ -144,6 +157,10 @@ describe('TeamCreationComponent', () => {
     expect(component.teamData().players_roster['Ogre']).toHaveLength(1);
     expect(component.teamData().players_roster['Treeman']).toBeUndefined();
     expect(component.isPlayerAtLimit({ nombre: 'Treeman', cantidad: 1, coste: 50_000 })).toBe(true);
+
+    fixture.detectChanges();
+    const validationPanel = fixture.nativeElement.querySelector('[aria-labelledby="team-validation-title"]') as HTMLElement;
+    expect(validationPanel.textContent).toContain('Grandullón: 1 / 1.');
   });
 
   it('allows exactly three Grandullones when the roster limit is three', () => {

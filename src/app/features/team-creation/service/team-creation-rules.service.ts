@@ -32,27 +32,15 @@ export class TeamCreationRulesService {
 
     public evaluateTeamRules(team: UserTeamTemplate, selectedRoster: Roster): void{
 
-        let apothecaryCount = true;
-        let cheerleadersCount = true;
-        let coachAssistantCount = true;
-
         const playerCount = this.evaluateTeamPlayersCount(team.players_roster);
 
-        const rerollCount = this.evaluateTeamRerollCount(team.rerolls);
+        const rerollCount = this.evaluateTeamRerollCount(team.rerolls, selectedRoster.segundas_oportunidades.cantidad);
 
         const fanFactorCount = this.evaluateTeamFanFactorCount(team.fan_factor);
 
-        if(team.apothecary){
-            apothecaryCount = this.evaluateTeamApothecary(team.apothecary);
-        }
-
-        if(team.cheerleaders){
-            cheerleadersCount = this.evaluateCheerleadersCount(team.cheerleaders);
-        }
-
-        if(team.coach_assistant){
-            coachAssistantCount = this.evaluateCoachAssistantCount(team.coach_assistant);
-        }
+        const apothecaryCount = this.evaluateTeamApothecary(team.apothecary ?? 0, selectedRoster.apotecario);
+        const cheerleadersCount = this.evaluateCheerleadersCount(team.cheerleaders ?? 0);
+        const coachAssistantCount = this.evaluateCoachAssistantCount(team.coach_assistant ?? 0);
 
         const goldReserveCount = this.evaluateGoldReserveCount(team.gold_reserve);
         const rosterGroupLimits = this.evaluateRosterGroupLimits(team.players_roster, selectedRoster);
@@ -80,16 +68,17 @@ export class TeamCreationRulesService {
         return (playerCollection.length >= TEAM_CREATION_RULES.minPlayers) && (playerCollection.length <= TEAM_CREATION_RULES.maxPlayers);
     }
 
-    private evaluateTeamRerollCount(rerolls: number): boolean {
-        return (rerolls >= 0) && (rerolls <= TEAM_CREATION_RULES.maxRerolls);
+    private evaluateTeamRerollCount(rerolls: number, rosterMaxRerolls: number): boolean {
+        const maxRerolls = Math.min(TEAM_CREATION_RULES.maxRerolls, rosterMaxRerolls);
+        return (rerolls >= 0) && (rerolls <= maxRerolls);
     }
 
     private evaluateTeamFanFactorCount(fanFactor: number): boolean {
         return (fanFactor >= TEAM_CREATION_RULES.minFanFactor) && (fanFactor <= TEAM_CREATION_RULES.maxFanFactor);
     }
 
-    private evaluateTeamApothecary(apothecary: number): boolean{
-        return (apothecary <= TEAM_CREATION_RULES.maxApothecary) && (apothecary >= 0)
+    private evaluateTeamApothecary(apothecary: number, rosterAllowsApothecary: boolean): boolean{
+        return (apothecary <= TEAM_CREATION_RULES.maxApothecary) && (apothecary >= 0) && (rosterAllowsApothecary || apothecary === 0)
     }
 
     private evaluateCheerleadersCount(cheerleaders: number): boolean{

@@ -37,9 +37,28 @@ export class TeamCreationComponent implements OnInit {
   readonly individualValidationStatus = computed( () => this.teamCreationRulesService.individualValidations());
   readonly TeamCreationRules = TEAM_CREATION_RULES;
   readonly totalPlayers = computed( ()=> Object.values(this.teamData().players_roster).flat().length);
+  readonly effectiveMaxRerolls = computed(() => Math.min(
+    TEAM_CREATION_RULES.maxRerolls,
+    this.userSelectedRosterTemplate().segundas_oportunidades.cantidad,
+  ));
+  readonly rosterGroupLimitDetails = computed(() => {
+    const hiredPlayers = Object.values(this.teamData().players_roster).flat();
+
+    return (this.userSelectedRosterTemplate().restricciones_plantilla ?? []).map(restriction => ({
+      positions: restriction.playerPositions.join(', '),
+      current: hiredPlayers.filter(player =>
+        this.playerMatchesPositionGroup(player.playerInfo.posicion, restriction.playerPositions),
+      ).length,
+      maximum: restriction.maxPlayers,
+    }));
+  });
   ffCost: number = TEAM_CREATION_RULES.fanFactorCost
   readonly apothecaryCost = TEAM_CREATION_RULES.apothecaryCost;
   readonly apothecaryLimit = TEAM_CREATION_RULES.maxApothecary;
+
+  validationLabel(isValid: boolean): string {
+    return isValid ? 'Cumple' : 'No cumple';
+  }
 
   readonly playerButtons: Signal<Pick<Jugador, "nombre" | "cantidad" | "coste">[]> = computed(() => this.userSelectedRosterTemplate().jugadores.map(({ nombre, cantidad, coste }) => ({ nombre, cantidad, coste })));
 

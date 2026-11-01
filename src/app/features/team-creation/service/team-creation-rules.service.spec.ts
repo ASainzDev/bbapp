@@ -27,7 +27,7 @@ describe('TeamCreationRulesService', () => {
     reglas_especiales: [],
     jugadores: [],
     segundas_oportunidades: { cantidad: 8, coste_cada_una: 50_000 },
-    apotecario: false,
+    apotecario: true,
     metadata: { pagina_pdf: 1, pagina_txt: 1, pagina_impresa: 1, validado: true, faqs_revisadas: true },
   };
 
@@ -71,6 +71,16 @@ describe('TeamCreationRulesService', () => {
     expect(service.teamValid()).toBe(expected);
   });
 
+  it('enforces the roster reroll maximum when it is lower than the global maximum', () => {
+    const selectedRoster = { ...roster, segundas_oportunidades: { cantidad: 2, coste_cada_una: 50_000 } };
+
+    evaluate(createTeam({ rerolls: 2 }), selectedRoster);
+    expect(service.individualValidations().numberOfRerolls).toBe(true);
+
+    evaluate(createTeam({ rerolls: 3 }), selectedRoster);
+    expect(service.individualValidations().numberOfRerolls).toBe(false);
+  });
+
   it.each([
     [1, true],
     [3, true],
@@ -81,6 +91,13 @@ describe('TeamCreationRulesService', () => {
 
     expect(service.individualValidations().numberOfFanFactor).toBe(expected);
     expect(service.teamValid()).toBe(expected);
+  });
+
+  it('rejects an apothecary on a roster that does not allow one', () => {
+    evaluate(createTeam({ apothecary: 1 }), { ...roster, apotecario: false });
+
+    expect(service.individualValidations().numberOfApothecary).toBe(false);
+    expect(service.teamValid()).toBe(false);
   });
 
   it.each([

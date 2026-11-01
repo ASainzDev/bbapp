@@ -10,8 +10,8 @@
 <section>
     <label for="rerolls">Segundas oportunidades</label>
     <button type="button" aria-label="Quitar una segunda oportunidad" (click)="decreaseRerolls()" [disabled]="teamData().rerolls <= 0">−</button>
-    <input id="rerolls" type="number" [value]="teamData().rerolls" min="0" [max]="userSelectedRosterTemplate().segundas_oportunidades.cantidad" step="1" readonly>
-    <button type="button" aria-label="Añadir una segunda oportunidad" (click)="increaseRerolls()" [disabled]="teamData().rerolls >= userSelectedRosterTemplate().segundas_oportunidades.cantidad || teamData().gold_reserve < userSelectedRosterTemplate().segundas_oportunidades.coste_cada_una">+</button>
+    <input id="rerolls" type="number" [value]="teamData().rerolls" min="0" [max]="effectiveMaxRerolls()" step="1" readonly>
+    <button type="button" aria-label="Añadir una segunda oportunidad" (click)="increaseRerolls()" [disabled]="teamData().rerolls >= effectiveMaxRerolls() || teamData().gold_reserve < userSelectedRosterTemplate().segundas_oportunidades.coste_cada_una">+</button>
     <span>Coste: {{ userSelectedRosterTemplate().segundas_oportunidades.coste_cada_una }}</span>
 </section>
 
@@ -19,7 +19,7 @@
     <label for="fan-factor">Factor fan</label>
     <button type="button" aria-label="Reducir factor fan" (click)="decreaseFanFactor()" [disabled]="teamData().fan_factor <= 1">−</button>
     <input id="fan-factor" type="number" [value]="teamData().fan_factor" min="1" max="3" step="1" readonly>
-    <button type="button" aria-label="Aumentar factor fan" (click)="increaseFanFactor()" [disabled]="teamData().fan_factor >= 3 || teamData().gold_reserve < ffCost">+</button>
+    <button type="button" aria-label="Aumentar factor fan" (click)="increaseFanFactor()" [disabled]="teamData().fan_factor >= TeamCreationRules.maxFanFactor || teamData().gold_reserve < ffCost">+</button>
     <span>Coste por mejora: {{ ffCost }}</span>
 </section>
 
@@ -58,8 +58,66 @@
 }
 
 <!-- Panel de información de las validaciones -->
-<section>
-    <span> Límite de jugadores: {{TeamCreationRules.minPlayers}}/{{TeamCreationRules.maxPlayers}} :</span><span>{{ individualValidationStatus().numberOfPlayers }}</span><span>Actual: {{ this.totalPlayers() }}</span>
-    <span> Límite de rerolls: 0/{{TeamCreationRules.maxRerolls}}</span><span>{{ individualValidationStatus().numberOfRerolls}}</span><span>Actual: {{ this.teamData().rerolls}}</span>
-    <span>Límites conjuntos del roster: {{ individualValidationStatus().rosterGroupLimits ? 'Cumplidos' : 'Excedidos' }}</span>
+<section aria-labelledby="team-validation-title">
+    <h2 id="team-validation-title">Validación de la plantilla</h2>
+    <p>{{ validationStatus() ? 'La plantilla cumple las reglas de creación.' : 'La plantilla todavía no cumple todas las reglas.' }}</p>
+
+    <ul>
+        <li>
+            Jugadores: {{ totalPlayers() }} (mínimo {{ TeamCreationRules.minPlayers }}, máximo {{ TeamCreationRules.maxPlayers }}).
+            <strong>{{ validationLabel(individualValidationStatus().numberOfPlayers) }}</strong>
+        </li>
+        <li>
+            Segundas oportunidades: {{ teamData().rerolls }} / {{ effectiveMaxRerolls() }} máximo para este roster.
+            Coste por unidad: {{ userSelectedRosterTemplate().segundas_oportunidades.coste_cada_una }}.
+            <strong>{{ validationLabel(individualValidationStatus().numberOfRerolls) }}</strong>
+        </li>
+        <li>
+            Factor fan: {{ teamData().fan_factor }} (entre {{ TeamCreationRules.minFanFactor }} y {{ TeamCreationRules.maxFanFactor }}).
+            Coste por mejora: {{ TeamCreationRules.fanFactorCost }}.
+            <strong>{{ validationLabel(individualValidationStatus().numberOfFanFactor) }}</strong>
+        </li>
+        @if (userSelectedRosterTemplate().apotecario) {
+            <li>
+                Apotecario: {{ teamData().apothecary ?? 0 }} / {{ apothecaryLimit }} máximo.
+                Coste: {{ apothecaryCost }}.
+                <strong>{{ validationLabel(individualValidationStatus().numberOfApothecary) }}</strong>
+            </li>
+        } @else {
+            <li>
+                Apotecario: no permitido para este roster (actual: {{ teamData().apothecary ?? 0 }}).
+                <strong>{{ validationLabel(individualValidationStatus().numberOfApothecary) }}</strong>
+            </li>
+        }
+        <li>
+            Animadoras: {{ teamData().cheerleaders ?? 0 }} (entre {{ TeamCreationRules.minCheerleaders }} y {{ TeamCreationRules.maxCheerleaders }}).
+            Coste por unidad: {{ TeamCreationRules.cheerleadersCost }}.
+            <strong>{{ validationLabel(individualValidationStatus().numberOfCheerleaders) }}</strong>
+        </li>
+        <li>
+            Ayudantes de entrenador: {{ teamData().coach_assistant ?? 0 }} (entre {{ TeamCreationRules.minCoachAssistant }} y {{ TeamCreationRules.maxCoachAssistant }}).
+            Coste por unidad: {{ TeamCreationRules.coachAssistantCost }}.
+            <strong>{{ validationLabel(individualValidationStatus().numberOfCoachAssistant) }}</strong>
+        </li>
+        <li>
+            Reserva de oro: {{ teamData().gold_reserve }} (entre 0 y {{ TeamCreationRules.initialTeamBudget }}).
+            <strong>{{ validationLabel(individualValidationStatus().goldReserveValidation) }}</strong>
+        </li>
+    </ul>
+
+    <p>Valor del equipo actual: {{ teamData().team_value }}.</p>
+
+    @if (rosterGroupLimitDetails().length > 0) {
+        <h3>Límites conjuntos de este roster</h3>
+        <ul>
+            @for (limit of rosterGroupLimitDetails(); track limit.positions) {
+                <li>
+                    {{ limit.positions }}: {{ limit.current }} / {{ limit.maximum }}.
+                    <strong>{{ validationLabel(limit.current <= limit.maximum) }}</strong>
+                </li>
+            }
+        </ul>
+    } @else {
+        <p>Este roster no define límites conjuntos adicionales de jugadores.</p>
+    }
 </section>
