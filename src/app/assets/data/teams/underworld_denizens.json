@@ -3,7 +3,7 @@
   "equipos_famosos": ["Underworld Creepers", "Cragmere Critters", "Fungal Cowboys"],
   "liga": "Reto del Inframundo",
   "reglas_especiales": ["Sobornos y corrupción"],
-  "restricciones_plantilla": ["Puede tener un único jugador Grandullón, elegido entre las opciones indicadas."],
+  "restricciones_plantilla": [{"playerPositions": ["Grandullón"], "maxPlayers": 1}],
   "jugadores": [
     {"nombre": "Goblin Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Goblin", "coste": 40000, "mv": 6, "fu": 2, "ag": "3+", "ps": "4+", "ar": "8+", "habilidades_y_rasgos": ["Escurridizo", "Esquivar", "Humanoide bala"], "habilidades_primarias": ["A", "M", "T"], "habilidades_secundarias": ["G", "F", "P"]},
     {"nombre": "Snotling Lineman", "cantidad": 6, "posicion": "Línea", "raza": "Snotling", "coste": 15000, "mv": 5, "fu": 1, "ag": "3+", "ps": "4+", "ar": "6+", "habilidades_y_rasgos": ["Canijo", "Echarse a un lado", "Escurridizo", "Esquivar", "Humanoide bala", "Insignificante"], "habilidades_primarias": ["A", "M", "T"], "habilidades_secundarias": ["G"]},

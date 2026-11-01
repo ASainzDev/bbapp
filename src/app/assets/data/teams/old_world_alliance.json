@@ -3,7 +3,7 @@
   "equipos_famosos": ["Middenheim Maulers", "Averland All-Stars", "Blucheim Berserkers"],
   "liga": "Clásica del Viejo Mundo",
   "reglas_especiales": [],
-  "restricciones_plantilla": ["Puede tener un único jugador Grandullón, elegido entre las opciones indicadas."],
+  "restricciones_plantilla": [{"playerPositions": ["Grandullón"], "maxPlayers": 1}],
   "jugadores": [
     {"nombre": "Human Lineman", "cantidad": 16, "posicion": "Línea", "raza": "Human", "coste": 50000, "mv": 6, "fu": 3, "ag": "3+", "ps": "4+", "ar": "9+", "habilidades_y_rasgos": [], "habilidades_primarias": ["G"], "habilidades_secundarias": ["A", "F"]},
     {"nombre": "Halfling Hopeful", "cantidad": 5, "posicion": "Línea", "raza": "Halfling", "coste": 30000, "mv": 5, "fu": 2, "ag": "3+", "ps": "4+", "ar": "7+", "habilidades_y_rasgos": ["Escurridizo", "Esquivar", "Humanoide bala"], "habilidades_primarias": ["A"], "habilidades_secundarias": ["F", "G"]},

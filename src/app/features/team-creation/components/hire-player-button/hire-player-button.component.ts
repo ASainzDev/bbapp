@@ -12,6 +12,8 @@ export class HirePlayerButtonComponent {
   
   @Input() atLimit! : boolean;
 
+  @Input() canAfford = true;
+
   @Output() playerHired: EventEmitter<string> = new EventEmitter;
   
   hirePlayer(playerName: string) {

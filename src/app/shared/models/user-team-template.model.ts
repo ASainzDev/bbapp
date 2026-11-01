@@ -7,6 +7,7 @@ export interface UserTeamTemplate {
     players_roster: Record<string, UserTeamPlayer[]>,
     rerolls: number,
     fan_factor: number,
+    apothecary?: number,
     cheerleaders?: number,
     coach_assistant?: number,
     logo?: string,

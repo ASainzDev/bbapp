@@ -3,10 +3,16 @@ export interface Roster {
   equipos_famosos: string[];
   liga: string;
   reglas_especiales: any[];
+  restricciones_plantilla?: RosterGroupLimit[];
   jugadores: Jugador[];
   segundas_oportunidades: Segundasoportunidades;
   apotecario: boolean;
   metadata: Metadata;
+}
+
+export interface RosterGroupLimit {
+  playerPositions: string[];
+  maxPlayers: number;
 }
 
 interface Metadata {
